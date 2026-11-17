@@ -1,0 +1,3137 @@
+[
+  {
+    "project": "Framework",
+    "sourceRoot": "Framework",
+    "files": [
+      {
+        "source": "Framework/Core/ArchitectureLifecycleCoordinator.cs",
+        "module": "Core",
+        "sha256": "36c93806bccff33b26a83d0a7eccb292d8f2188e94cdbd0481a486d050532ce2",
+        "types": []
+      },
+      {
+        "source": "Framework/Core/Async/ObExecutionScope.cs",
+        "module": "Core/Async",
+        "sha256": "10c30490306003583b71a1203157e9dead078e910b1bbc1b5aca1739ef99bb4a",
+        "types": [
+          {
+            "name": "ObFramework.Core.Async.ObExecutionScope",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Async/ObLifetime.cs",
+        "module": "Core/Async",
+        "sha256": "d531d3523b62d5163fca169a796e62743d69776c79a2790f975f8e9af3bba14d",
+        "types": [
+          {
+            "name": "ObFramework.Core.Async.ObLifetime",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Async/ObTask.cs",
+        "module": "Core/Async",
+        "sha256": "d49e8e117cea715be152fe4cd88d360ff71d84c1cd730fca83b06378eed49a08",
+        "types": [
+          {
+            "name": "ObFramework.Core.Async.ObTask\u003CT\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.Async.ObTask",
+            "line": 28
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Async/ObTaskMethodBuilder.cs",
+        "module": "Core/Async",
+        "sha256": "fb5860df724128efa911303adbaa8144a9e08dd3ba97b22ce5ae95577cca131b",
+        "types": [
+          {
+            "name": "ObFramework.Core.Async.ObTaskMethodBuilder\u003CT\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.Async.ObTaskMethodBuilder",
+            "line": 68
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IAdapter.cs",
+        "module": "Core",
+        "sha256": "4d393339468b1e8b995a9ce434bbc72766f2c3bf2e51b74b87033292e1b8ffb8",
+        "types": [
+          {
+            "name": "ObFramework.Core.IReadAdapter\u003Cout TResult\u003E",
+            "line": 10
+          },
+          {
+            "name": "ObFramework.Core.IReadAdapter\u003Cout TResult, in TRequest\u003E",
+            "line": 17
+          },
+          {
+            "name": "ObFramework.Core.IAsyncReadAdapter\u003CTResult, in TRequest\u003E",
+            "line": 21
+          },
+          {
+            "name": "ObFramework.Core.IWriteAdapter\u003Cin TValue\u003E",
+            "line": 28
+          },
+          {
+            "name": "ObFramework.Core.IAdapter\u003Cout TResult, in TValue\u003E",
+            "line": 36
+          },
+          {
+            "name": "ObFramework.Core.IAdapter\u003Cout TResult, in TRequest, in TValue\u003E",
+            "line": 43
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IArchitecture.cs",
+        "module": "Core",
+        "sha256": "c522aa9a8087a094014b2d0f8fd2dba24c6cfd91827fdb34210c752745ab7062",
+        "types": [
+          {
+            "name": "ObFramework.Core.IArchitecture",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Core.AArchitecture\u003CT\u003E",
+            "line": 38
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IBindableProperty.cs",
+        "module": "Core",
+        "sha256": "e320676fc35966fbe3636661b8434cd4915f81fe3255998366340e5394efab55",
+        "types": [
+          {
+            "name": "ObFramework.Core.IReadonlyBindableProperty\u003CT\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.IBindableProperty\u003CT\u003E",
+            "line": 12
+          },
+          {
+            "name": "ObFramework.Core.BindableProperty\u003CT\u003E",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/ICanRule.cs",
+        "module": "Core",
+        "sha256": "a84f655c22f594cc5f460ea35b5fc4f823ca2beefeae2ccfbe293f5257f4b4e9",
+        "types": [
+          {
+            "name": "ObFramework.Core.IBelongToArchitecture",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Core.ICanSetArchitecture",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Core.ICanGetModel",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Core.ICanGetSystem",
+            "line": 17
+          },
+          {
+            "name": "ObFramework.Core.ICanRegisterEvent",
+            "line": 21
+          },
+          {
+            "name": "ObFramework.Core.ICanSendCommand",
+            "line": 25
+          },
+          {
+            "name": "ObFramework.Core.ICanSendEvent",
+            "line": 29
+          },
+          {
+            "name": "ObFramework.Core.ICanRegisterService",
+            "line": 32
+          },
+          {
+            "name": "ObFramework.Core.ICanQuery",
+            "line": 35
+          },
+          {
+            "name": "ObFramework.Core.ICanGetPlugin",
+            "line": 38
+          },
+          {
+            "name": "ObFramework.Core.ICanInit",
+            "line": 41
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/ICommand.cs",
+        "module": "Core",
+        "sha256": "8382db514c55c6160880f6d5b9852257e93ef2cc8dbfabff621f5ef7375ffd6f",
+        "types": [
+          {
+            "name": "ObFramework.Core.ICommand\u003Cout TResult\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.ICommand",
+            "line": 10
+          },
+          {
+            "name": "ObFramework.Core.IAsyncCommand\u003CTResult\u003E",
+            "line": 14
+          },
+          {
+            "name": "ObFramework.Core.IAsyncCommand",
+            "line": 18
+          },
+          {
+            "name": "ObFramework.Core.ACommand",
+            "line": 22
+          },
+          {
+            "name": "ObFramework.Core.ACommand\u003CT\u003E",
+            "line": 29
+          },
+          {
+            "name": "ObFramework.Core.AAsyncCommand\u003CT\u003E",
+            "line": 36
+          },
+          {
+            "name": "ObFramework.Core.AAsyncCommand",
+            "line": 43
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IController.cs",
+        "module": "Core",
+        "sha256": "6251cef298237ecf542769a5ded146ea74cfc82e15ecb142441a7d32a4a3ab22",
+        "types": [
+          {
+            "name": "ObFramework.Core.IController",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IModel.cs",
+        "module": "Core",
+        "sha256": "01055cabde082405fde2beb867981ffa697cab49fa2b468165f7fc0f2b517bd5",
+        "types": [
+          {
+            "name": "ObFramework.Core.IModel",
+            "line": 5
+          },
+          {
+            "name": "ObFramework.Core.AModel",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IQuery.cs",
+        "module": "Core",
+        "sha256": "ad1821b21c1cae78008db113d47f0633cea2714e1c147452fd757a63d021717b",
+        "types": [
+          {
+            "name": "ObFramework.Core.IQuery\u003Cout TResult\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.AQuery\u003CTResult\u003E",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IService.cs",
+        "module": "Core",
+        "sha256": "6ef1cf2281b03f9115e38987758a304d030ba8072d81b93be606689193e68e84",
+        "types": [
+          {
+            "name": "ObFramework.Core.IService",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/ISystem.cs",
+        "module": "Core",
+        "sha256": "5805f630b491b3501d578420c5a54180d593eff4ac35fdbc237b87f78a07ad5a",
+        "types": [
+          {
+            "name": "ObFramework.Core.ISystem",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Core.ASystem",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/IViewLifecycle.cs",
+        "module": "Core",
+        "sha256": "346cfc483a7c485ab28062dc61c3b69132b8d3b70f1f3b9bafdca3819206057e",
+        "types": [
+          {
+            "name": "ObFramework.Core.IViewEnabled",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Core.IViewDisabled",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Plugins/IPlugin.cs",
+        "module": "Core/Plugins",
+        "sha256": "85f314cd73bc9c2a19f7a43b76f81b29d200d6bf94bbf533ea8d5f86c4ff073d",
+        "types": [
+          {
+            "name": "ObFramework.Core.IPlugin",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Core.IPluginContext",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Plugins/PluginApplication.cs",
+        "module": "Core/Plugins",
+        "sha256": "429296c470e061cc8bf1ab889f90d42bbe930823c2b31e8269852ee41e295e3c",
+        "types": [
+          {
+            "name": "ObFramework.Core.PluginApplication",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Plugins/PluginHost.cs",
+        "module": "Core/Plugins",
+        "sha256": "cb881fe1227409626497775d38d05958837bf74a4bdbdba828bd272108f38491",
+        "types": [
+          {
+            "name": "ObFramework.Core.PluginHost",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Plugins/PluginRegistration.cs",
+        "module": "Core/Plugins",
+        "sha256": "ab4ff35650511f4b94524a1ea7a759d538bc8114de857bb75b63b0a13be38daf",
+        "types": [
+          {
+            "name": "ObFramework.Core.PluginRegistration",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Core/Service/IEventbus.cs",
+        "module": "Core/Service",
+        "sha256": "4dba96d93044fc200a1ea1026487efe0a505d901e5d051b8ea34b8cd2cb0444c",
+        "types": []
+      },
+      {
+        "source": "Framework/Extension/DictionaryExtension.cs",
+        "module": "Extension",
+        "sha256": "c13f7696624ad660b67039d61610d34bc21e601962f4236a6ac42331a87fa0f2",
+        "types": [
+          {
+            "name": "ObFramework.Extension.SystemCollectionExtension",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/ICanExtension.cs",
+        "module": "Extension",
+        "sha256": "e563b7a53c84632e3beff01779e12c0afa44c9b3d8716077530231d9aecc3f33",
+        "types": [
+          {
+            "name": "ObFramework.Extension.ICanExtension",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/Integrated/ClockExtension.cs",
+        "module": "Extension/Integrated",
+        "sha256": "916e34efdc7a574375b889c4aebeb4111f5799be330056704a1782c20a8b0d90",
+        "types": [
+          {
+            "name": "ObFramework.Extension.Integrated.ClockExtension",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/Integrated/DiagnosticsExtension.cs",
+        "module": "Extension/Integrated",
+        "sha256": "bfe4542d6e0cdd8388c9847017384248ea1c90ff170d49ca41ac887657378a99",
+        "types": [
+          {
+            "name": "ObFramework.Extension.Integrated.DiagnosticsExtension",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/Integrated/PoolingExtension.cs",
+        "module": "Extension/Integrated",
+        "sha256": "3ba8e0e109d760651818af49634fa1a9b255cdccf489c09785ed8f473ae55026",
+        "types": [
+          {
+            "name": "ObFramework.Extension.Integrated.PoolingExtension",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/MathExtension.cs",
+        "module": "Extension",
+        "sha256": "c895f03a3c4b23382aaec5703da63950ec9289f26e1523362884215b1d68d6ea",
+        "types": [
+          {
+            "name": "ObFramework.Extension.MathExtension",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/MessagePipe.VContainerExtension.cs",
+        "module": "Extension",
+        "sha256": "cc679c937b1c93f4e31471462436b6fafbe5724eb9e207bf52a7504ad3224547",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/Clock/ClockPlugin.cs",
+        "module": "Integrated/Clock",
+        "sha256": "2e4b7d9841364940eb3ac333726bd8c7ab5c67eac403199e753d7ec5edfb0f5a",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Clock.ClockPlugin",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Clock/FrameDispatcher.cs",
+        "module": "Integrated/Clock",
+        "sha256": "7a518c59faa7d45f142338eafbf4c6578c893cd359df21e3c418c32aa02cf3db",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Clock.FrameDispatcher",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Clock/IApplicationFrameLoopDriver.cs",
+        "module": "Integrated/Clock",
+        "sha256": "a37837a25427df537a43da6ff00f3bc91a7c7d7ee3232547744a0a1c02ce600c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Clock.IApplicationFrameLoopDriver",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Clock/IFrameLoopDriver.cs",
+        "module": "Integrated/Clock",
+        "sha256": "c13e4b0048f0adcb5405512402b747b6e28853a8e518b8764e10b234c9aef73e",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Clock.IFrameLoopDriver",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Clock/ITickable.cs",
+        "module": "Integrated/Clock",
+        "sha256": "ed7e2c4a48ba9213fec4c535b5d5fb12ed37282d728ae64f9cc0de3df8365972",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Clock.IFrameTickable",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Integrated.Clock.ITickable",
+            "line": 5
+          },
+          {
+            "name": "ObFramework.Integrated.Clock.IFixedTickable",
+            "line": 10
+          },
+          {
+            "name": "ObFramework.Integrated.Clock.ILateTickable",
+            "line": 15
+          },
+          {
+            "name": "ObFramework.Integrated.Clock.ILogicTickable",
+            "line": 20
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Config/ConfigEntry.cs",
+        "module": "Integrated/Config",
+        "sha256": "355e4660de1052e8371a97b0dfa21936cc347b0ba2578d3d15c00e4ba1e07856",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Config.ConfigEntry",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Config/ConfigManager.cs",
+        "module": "Integrated/Config",
+        "sha256": "85214ede2a3cc6a98a5d347e8c33b16996326116e6cb76c399b1dfdfa0803867",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/Config/ConfigPlugin.cs",
+        "module": "Integrated/Config",
+        "sha256": "0a587b428849ef8c745c1ee9efce8e27669a19e18402aa43057b563b7cc8b423",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Config.ConfigPlugin",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Config/IConfig.cs",
+        "module": "Integrated/Config",
+        "sha256": "ab7b9f67f71de239fdaf0e617e3f4b3b9ca7fe426dbb991dcd2e041744ec47ab",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Config.IConfig",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Config/IConfigCatalog.cs",
+        "module": "Integrated/Config",
+        "sha256": "f283ae8d8161716b0c3fe2c6592f8644a159d5bd68430fcc29d2e47819574f66",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Config.IConfigCatalog",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Config/ILubanConfigCatalog.cs",
+        "module": "Integrated/Config",
+        "sha256": "b1364c68f6bbd313b74463f8a2fa8a5ec44becd337ed4e56868e50aee73726b2",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Config.ILubanConfigCatalog",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Diagnostics/DiagnosticsManager.cs",
+        "module": "Integrated/Diagnostics",
+        "sha256": "38d9fcaf45f171509bef7fad9519836bfce52cda9068ab311243a90476fb0ea0",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/Diagnostics/DiagnosticsOption.cs",
+        "module": "Integrated/Diagnostics",
+        "sha256": "70d534f811918e941c99fff8a6464314511018aa92bc7f0ca0cd9ddeb6c53d15",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Diagnostics.DiagnosticsOption",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Diagnostics/DiagnosticsPlugin.cs",
+        "module": "Integrated/Diagnostics",
+        "sha256": "69de85e5fd0ab9a5b4f1e389d15ac0582df7bc334090111763c6107eed7b8362",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Diagnostics.DiagnosticsPlugin",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Pooling/DictionaryPool.cs",
+        "module": "Integrated/Pooling",
+        "sha256": "7ed3351546f0404cd05b2673c049032a57bc3e52055b77c32dab8c2a6355a721",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Pooling.DictionaryPoolPolicy\u003CTKey, TValue\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Integrated.Pooling.DictionaryPool\u003CTKey, TValue\u003E",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Pooling/IObjectPool.cs",
+        "module": "Integrated/Pooling",
+        "sha256": "b9b45ab565221a5f3f3ed50d505dff18ae328c996a5e116473ff6757f67b9c36",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Pooling.IObjectPool\u003CT\u003E",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Integrated.Pooling.IPoolPolicy\u003CT\u003E",
+            "line": 16
+          },
+          {
+            "name": "ObFramework.Integrated.Pooling.APoolPolicy\u003CT\u003E",
+            "line": 24
+          },
+          {
+            "name": "ObFramework.Integrated.Pooling.AObjectPool\u003CT\u003E",
+            "line": 32
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Pooling/ListPool.cs",
+        "module": "Integrated/Pooling",
+        "sha256": "3c2f5d3625a3fe23a8f9de133cf7617e8deb45794a6db3cfab6d1bf9f485875e",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Pooling.ListPoolPolicy\u003CT\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Integrated.Pooling.ListPool\u003CT\u003E",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/AssetEntry.cs",
+        "module": "Integrated/Resource",
+        "sha256": "95bcdb4ce397f74642d9c8af25b2f6471b55a8aebf45ae634dcfea59eb0b2b0b",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.AssetEntry",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/AssetKey.cs",
+        "module": "Integrated/Resource",
+        "sha256": "054da6f97ac99027bdb47048235f31fa9eefe6547371de845b334ae1fc5adc65",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.AssetKey",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/AssetLoadResult.cs",
+        "module": "Integrated/Resource",
+        "sha256": "a0873a6cdedb35a4d6e34767167ecaf705da12f48b2a09a0dcf6794153dd5dd6",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.AssetLoadResult\u003CTAsset, TNativeHandle\u003E",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/Handle/AssetHandle.cs",
+        "module": "Integrated/Resource/Handle",
+        "sha256": "d652dbcd5189ef35e6bb8bb884c63f0f53690559471a9d7c8e83aa9c8df299dd",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.Handle.AssetHandle",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/Handle/IHandle.cs",
+        "module": "Integrated/Resource/Handle",
+        "sha256": "2be37e83dc804aa71deec719494e6faeac5c7ddfacfb999688f73ef3936d2185",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.Handle.IHandle",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Integrated.Resource.Handle.AHandle",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/Handle/RawFileHandle.cs",
+        "module": "Integrated/Resource/Handle",
+        "sha256": "86fffff32d033411fd000623475b225b680165a4bdb5f1fcc612e1917e2bd4f6",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.Handle.RawFileHandle",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/IAssetAdapter.cs",
+        "module": "Integrated/Resource",
+        "sha256": "3d12bea83d29bdd5806ba1313ac13f299a8022d03e756e4ae5048055efed97f8",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.IAssetAdapter\u003CTNativeHandle\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Integrated.Resource.IRawFileAdapter\u003CTNativeHandle\u003E",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Resource/IAssetManager.cs",
+        "module": "Integrated/Resource",
+        "sha256": "322cdf0e41cfda2ff3bb5856585a6d46af8e0ead73e47e27c72350bfb7a9f004",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/Resource/ResourcePlugin.cs",
+        "module": "Integrated/Resource",
+        "sha256": "388c570b7cb96fd7414d2d0d95bec58dbee93cc03e564dd46f9f8978782ba3fe",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Resource.ResourcePlugin",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/ASaveData.cs",
+        "module": "Integrated/Save",
+        "sha256": "d11021cb7e0477813809f2650500435072e4344b7585a73cac9aed087c048d71",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.ASaveData",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/CanSaveAttribute.cs",
+        "module": "Integrated/Save",
+        "sha256": "ac61c0c4e5bba2e1c003f483b5f278c16f4476d238b5516a1c7da4626b2d3fdc",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.CanSaveAttribute",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/FileSaveStore.cs",
+        "module": "Integrated/Save",
+        "sha256": "f0e39a8e27854c2fa64eef0a75a1ae0affede82b5feffd54c48be13c15fa6dbe",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.ISaveStore",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Integrated.Save.FileSaveStore",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/ICanSave.cs",
+        "module": "Integrated/Save",
+        "sha256": "a152eb42ba4bfb2cfc8d7e90e9ffba6d372a877e0a2c0f0705765552b0eecf44",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.ICanSave",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/ISaveMigration.cs",
+        "module": "Integrated/Save",
+        "sha256": "3e798bb1b60797504004c620eed7d47f99170badff01e1426be18860605831e1",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.ISaveMigration",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/SaveFieldAttribute.cs",
+        "module": "Integrated/Save",
+        "sha256": "f62f502b7c05b78e576ff2b8b37d5a60398807ce60701f693f9d7e64917facca",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.SaveFieldAttribute",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/SaveManager.cs",
+        "module": "Integrated/Save",
+        "sha256": "f4f5891afb9a9e1910d9337769cd65c84aa59becdbebab93e9a315566eb65178",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/Save/SavePlugin.cs",
+        "module": "Integrated/Save",
+        "sha256": "3e17e4d9328b743fdc7e4b41cefc4ac6b7122f7d28ac1b1fefde7a54cd815bca",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Save.SavePlugin",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Save/SaveSlot.cs",
+        "module": "Integrated/Save",
+        "sha256": "4b8ff7f0d14dff622a53c59b9930cacd4664b207c25cf0fc7daa1c266cf6baba",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/UI/AUIView.cs",
+        "module": "Integrated/UI",
+        "sha256": "464b2d08afc9ead5620340ecd6909448082ddd789f4905004df7d563915ca3eb",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.AUIView",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/Attributes/UIViewAttributes.cs",
+        "module": "Integrated/UI/Attributes",
+        "sha256": "babbe3078b51542c4ab4f5b3f9e71bc624b2b6af2026bbdf915a02bc89afb230",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.ObservablePropertyAttribute",
+            "line": 10
+          },
+          {
+            "name": "ObFramework.Integrated.UI.RelayCommandAttribute",
+            "line": 20
+          },
+          {
+            "name": "ObFramework.Integrated.UI.NotifyCanExecuteChangedForAttribute",
+            "line": 37
+          },
+          {
+            "name": "ObFramework.Integrated.UI.NotifyPropertyChangedForAttribute",
+            "line": 52
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/EUILevel.cs",
+        "module": "Integrated/UI",
+        "sha256": "a1d3af9700ead77972b83fafa7b996d2aa6dc899e708b1dd6643c10d95e18984",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.EUILevel",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/EUIOpenMode.cs",
+        "module": "Integrated/UI",
+        "sha256": "39517c81939d5fceaeb028b934a52dc3c240a3834e9bc35eb9212c8a77782877",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.EUIOpenMode",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/IUIAdapter.cs",
+        "module": "Integrated/UI",
+        "sha256": "b7d1e3703a9c1cee83baee82768481379b7b9de43b4a47fcf84e621ed13852ea",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.IUIAdapter",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/IUIData.cs",
+        "module": "Integrated/UI",
+        "sha256": "9aeb148ae6b0b4045a27aad70ee86104720b94a7ad5a5dd6467fd7a38d8301eb",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.IUIData",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Integrated.UI.UIPanelData",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/IUIWindow.cs",
+        "module": "Integrated/UI",
+        "sha256": "7b6b4d6dbe837c71851b0fa3efb8173f1d0a8f02cf5c6be8d1dc3b7a07cb52fe",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.IUIWindow",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/UIBindingDispatch.cs",
+        "module": "Integrated/UI",
+        "sha256": "73f9a61a8036ee1ee1263a4d351c66a1c55fe320a4b97ad957f2e1857f58a830",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.UIBindingDispatch",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/UICommand.cs",
+        "module": "Integrated/UI",
+        "sha256": "c91eebd78e25e3792078a9db605856b3afc8c012d06c96a80249f976dd7b87a8",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.AUICommand",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Integrated.UI.AUIAsyncCommand",
+            "line": 65
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/UIKey.cs",
+        "module": "Integrated/UI",
+        "sha256": "559121c99af10647c0c5a086706c9f48b28d9ba6c35d0ecc6b787f944cf9e3f0",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/UI/UIManager.cs",
+        "module": "Integrated/UI",
+        "sha256": "e13d0fc60906d36178ae7ca5c83154ec5c501ec3f24a752d6b0e1e7f81b74777",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/UI/UIPlugin.cs",
+        "module": "Integrated/UI",
+        "sha256": "d219ec7b6031893ac12b0980d60fc85cd5dfaf6527bd340d757486b4316de710",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.UIPlugin",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/UIStackEntry.cs",
+        "module": "Integrated/UI",
+        "sha256": "18a49d2fd539620c36fbff2836f4151d16e7d530063a8bb962bb9c65f9ac5f9a",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/UI/UIViewInstance.cs",
+        "module": "Integrated/UI",
+        "sha256": "df854db03beb0821b0c8ec855133f8cba83fee23af0c994f55df07faf8addb00",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.UIViewInstance",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/UI/UIViewRegistry.cs",
+        "module": "Integrated/UI",
+        "sha256": "fc731d70492446f1089be30b766e8ca3c34efa05629d0c6e72b4ff18dc22374b",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.UI.UIViewRegistration",
+            "line": 11
+          },
+          {
+            "name": "ObFramework.Integrated.UI.UIViewRegistry",
+            "line": 39
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Annotations/InjectAttribute.cs",
+        "module": "ThirdParty/VCotainer/Annotations",
+        "sha256": "c2aa6da0e520d9c9d7714a02726b1b9e30877c895580e5eb5f2d7af1500f30fe",
+        "types": [
+          {
+            "name": "VContainer.PreserveAttribute",
+            "line": 5
+          },
+          {
+            "name": "VContainer.InjectAttribute",
+            "line": 9
+          },
+          {
+            "name": "VContainer.InjectIgnoreAttribute",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Annotations/KeyAttribute.cs",
+        "module": "ThirdParty/VCotainer/Annotations",
+        "sha256": "491e7abaedf165b8609c5c9cd4289b2d3545e1e445acc60cfa1f714c60a86b5e",
+        "types": [
+          {
+            "name": "VContainer.KeyAttribute",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/AssemblyInfo.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "db098f5c7457f880212cb43f51c8fea547e56390d2327ce7687b7ecd15419dc9",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Container.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "7d4219bc7c15fdc5dceaabb7ca5177c2c5a2fa96e4eefe78eab5a208e27d6320",
+        "types": [
+          {
+            "name": "VContainer.IObjectResolver",
+            "line": 9
+          },
+          {
+            "name": "VContainer.IScopedObjectResolver",
+            "line": 45
+          },
+          {
+            "name": "VContainer.Lifetime",
+            "line": 51
+          },
+          {
+            "name": "VContainer.ScopedContainer",
+            "line": 58
+          },
+          {
+            "name": "VContainer.Container",
+            "line": 204
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/ContainerBuilder.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "c04d0c74995dc089e6ee0d879e69796202328dbf161f34a4b307eabe121d3a95",
+        "types": [
+          {
+            "name": "VContainer.IContainerBuilder",
+            "line": 12
+          },
+          {
+            "name": "VContainer.ScopedContainerBuilder",
+            "line": 24
+          },
+          {
+            "name": "VContainer.ContainerBuilder",
+            "line": 74
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/ContainerBuilderExtensions.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "8f3f00a16c76e20950608f46fce11161f2deb05ee8a4a62fb3bead7b229384c0",
+        "types": [
+          {
+            "name": "VContainer.ContainerBuilderExtensions",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Diagnostics/DiagnosticsCollector.cs",
+        "module": "ThirdParty/VCotainer/Diagnostics",
+        "sha256": "add644c514dded7eec7966fe726a119744a0383378586265d62a1867d047a963",
+        "types": [
+          {
+            "name": "VContainer.Diagnostics.DiagnosticsCollector",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Diagnostics/DiagnosticsContext.cs",
+        "module": "ThirdParty/VCotainer/Diagnostics",
+        "sha256": "051925bd1464f9503cfb19f53ff2a937213f4fdcf37edafd5d47ecdd06efdb6c",
+        "types": [
+          {
+            "name": "VContainer.Diagnostics.DiagnositcsContext",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Diagnostics/DiagnosticsInfo.cs",
+        "module": "ThirdParty/VCotainer/Diagnostics",
+        "sha256": "81cebad94b78f5536232eb269d1ac69c3ce2a73b89f7bc9f5c30e4de619eb84a",
+        "types": [
+          {
+            "name": "VContainer.Diagnostics.DiagnosticsInfo",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Diagnostics/RegisterInfo.cs",
+        "module": "ThirdParty/VCotainer/Diagnostics",
+        "sha256": "5519c0adbe2595d60021a7117d135e180f8dc1c87259b560c632c1264cf73368",
+        "types": [
+          {
+            "name": "VContainer.Diagnostics.RegisterInfo",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Diagnostics/ResolveInfo.cs",
+        "module": "ThirdParty/VCotainer/Diagnostics",
+        "sha256": "e543e6f0ad1b5a903babfc2340187cc70318442a197e66e6e10fb7784c90112f",
+        "types": [
+          {
+            "name": "VContainer.Diagnostics.ResolveInfo",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/IInjectParameter.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "1202ad8aff898538cbee41f0a319632185131881a73a176eddbfac4540817686",
+        "types": [
+          {
+            "name": "VContainer.IInjectParameter",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/IInjector.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "1c18cbfd69c63b8d35a935fa8b3f332d694f7f2831e07ce8642cc8f8367c1ad7",
+        "types": [
+          {
+            "name": "VContainer.IInjector",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/IInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "ff314a2a68804d5ac57a2a0e3dfb84213744314a9aa321e5bd8400f54b25c414",
+        "types": [
+          {
+            "name": "VContainer.IInstanceProvider",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/IObjectResolverExtensions.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "62d5d4057b4fb5db1dd7692c79fb1883f41e7595edb3a6fb42917914e82a38e8",
+        "types": [
+          {
+            "name": "VContainer.IObjectResolverExtensions",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/BuilderCallbackDisposable.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "cced8e403c67c236d34659fb07c05f7aebec1b056448ee133a0632fa9525c675",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/CappedArrayPool.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "7146841c6ca234d691a9bc2c43082820a75246139a60af12e2f1d1443066d949",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/CompositeDisposable.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "199c6b3a8e8942ea4d96877c5a108563bb071f3efc276d99deb00743e7463dfc",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/ContainerLocal.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "0f01c813d06ac740d687ed129d1940fd9050dcc09075fac44b3a423aa35cf50b",
+        "types": [
+          {
+            "name": "VContainer.Internal.ContainerLocal\u003CT\u003E",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/FixedTypeObjectKeyHashtable.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "f742b0a6d8b0ebc1e1857a19a7b7e023fe2945a8468474df90e4026484ebb521",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/FreeList.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "dd5106ec229d67cef287bcd7515b5d20221c70ef840f61cc62250c4173b41e06",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/FuncRegistrationBuilder.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "0bd4dadb1c098e207f1f8d740748dbd1b1d280b79d3dc286b1024c391ec5347c",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InjectParameter.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "c6cc2090e66a16dd8960b830e0d128fb1004d281eec06a07c4689bf31313e073",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InjectorCache.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "af42b9ad841ec228896661737a4dcc66e65c75421f0368a6321cc123a57a0ffc",
+        "types": [
+          {
+            "name": "VContainer.Internal.InjectorCache",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/CollectionInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "6e9613ebd1002792fdc9b6a2186a93c36144f4ad6fe4a7544697b398c520bbfa",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/ContainerInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "ad964fddd98889a041d08a657102a14a457ebaf96b00a22ec7184cb049d23173",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/ContainerLocalInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "1420071409367b2a947f59d5460b5c20b5af15585448aeb22bd7cf732d414310",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/ExistingInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "ec838604379e40efde3ea6036afda5f345ccd5ec44c917f35843148961f639c3",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/FuncInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "b641e301d6ff0b3f66fe280a131c6a3dde8c1028d0fb14a63366f45ba28758b1",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/InstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "6c33b26d4c060955a35a4a879471601718dd8471a90112e89a668952efd69929",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceProviders/OpenGenericInstanceProvider.cs",
+        "module": "ThirdParty/VCotainer/Internal/InstanceProviders",
+        "sha256": "53cb88a9d25609d95afd3cb587519d6612d146dc47aaf986eba51f29590c5fde",
+        "types": [
+          {
+            "name": "VContainer.Internal.OpenGenericInstanceProvider",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/InstanceRegistrationBuilder.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "86287f6aca4647997ce20f13dcf94f12267aeba83e39191f9b3e2fc6ed6e1bfc",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/ListPool.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "6d66f914f8284f0a7ccf7a7e3c88282cfcbb089e601c027b83e290808a03542b",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/OpenGenericRegistrationBuilder.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "4105c485686338bb2b5dd7855c33c0b5ffceb9a34605a13117dcc2153e801fd6",
+        "types": [
+          {
+            "name": "VContainer.Internal.OpenGenericRegistrationBuilder",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/ReflectionInjector.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "4aa0413344e766f18f2ba62e143ab57aa45094614b570f7a06ea6647684075e3",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/RuntimeTypeCache.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "c10ffd4c0495bdc12bb12d8a098e45d644c07def1d238df01027e5b69f97146a",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/TypeAnalyzer.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "e08ffd86c7cac6dcd31a040f167e4094286f3f2c25d9868e2ad59773fc62560e",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Internal/TypeKeyHashTable2.cs",
+        "module": "ThirdParty/VCotainer/Internal",
+        "sha256": "1d05e3d5f634eaa8e731590aaa2b6c21f477f002b57cb52d5ee0b7fccbfa087b",
+        "types": []
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Registration.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "2beaaf09a491a908512e7c118cc5b8216536e27d8a6f07bdd3e514981a7d49ff",
+        "types": [
+          {
+            "name": "VContainer.Registration",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/RegistrationBuilder.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "7e19c5f7992f63f70ff54127454f3a524926d9797e2105732dd38e41a0c33a1b",
+        "types": [
+          {
+            "name": "VContainer.RegistrationBuilder",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/Registry.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "57a91f22341e2d84ecaa274157e17f85221d8b9879f58fcdc466383ee2b075e1",
+        "types": [
+          {
+            "name": "VContainer.Internal.Registry",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/ThirdParty/VCotainer/VContainerException.cs",
+        "module": "ThirdParty/VCotainer",
+        "sha256": "4a26ac7a22723c975c16865f4efa8b608a5cb19c18f6149c564fe4a31259da59",
+        "types": [
+          {
+            "name": "VContainer.VContainerException",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Collection/Blackboard.cs",
+        "module": "Utility/Collection",
+        "sha256": "c4cf3ccf5eb1272c6d5dae7a5d8284ad45e549b20f1fbc82eee2d98e8fb71e1b",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Collection.BlackboardKey",
+            "line": 5
+          },
+          {
+            "name": "ObFramework.Utility.Collection.BlackboardKey\u003CT\u003E",
+            "line": 11
+          },
+          {
+            "name": "ObFramework.Utility.Collection.Blackboard",
+            "line": 16
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Collection/LRUCache.cs",
+        "module": "Utility/Collection",
+        "sha256": "9f91b1122d9b1869ef2209cd50b157437dd918b980ad7962b6016e616cc3d13e",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Collection.LRUCache\u003CTKey, TValue\u003E",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/FSM/FSM.cs",
+        "module": "Utility/FSM",
+        "sha256": "86977064d6d52cc8a17310775ad4397fc3cab83bc17c69807aa9420053300355",
+        "types": [
+          {
+            "name": "ObFramework.Utility.FSM.FSM\u003CT\u003E",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/FSM/IState.cs",
+        "module": "Utility/FSM",
+        "sha256": "bcdd03bf6c9b8dc019f3eda99318998bac47c7b1d7c31d9904dc6b4534bacb50",
+        "types": [
+          {
+            "name": "ObFramework.Utility.FSM.IState",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Utility.FSM.AState\u003CTStateId, TOwner\u003E",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/FSM/PollingTransitionPolicy.cs",
+        "module": "Utility/FSM",
+        "sha256": "c23fe487e2364e4ce913cc3064bedd52cbb2902f2d034b8a6e3d70e0b6a04896",
+        "types": [
+          {
+            "name": "ObFramework.Utility.FSM.PollingTransitionPolicy\u003CT\u003E",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/IPipelineMiddleware.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "732b3e015bf3a0d006295c43044dd6efac0bbb0d2ff2b3449db2dc075da0def3",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.IPipelineMiddleware\u003CTContext\u003E",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/IPipelineStep.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "341df026c41de682e97f53286b49a7b57bad5621c7228da8f8f59e8c2180377c",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.IPipelineStep\u003CTContext\u003E",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/Pipeline.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "a19612eda653ffb171bde6467b56d5db13741ba37fed46f39c9d5d7486fb635d",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.Pipeline\u003CTContext\u003E",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/PipelineBuilder.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "0b0efa3ecb6a7df1a1097e500785c56bbe77cf1ac36a2c4b74e56bc48719e8de",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.PipelineBuilder\u003CTContext\u003E",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/PipelineNext.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "2863e4426f505f84cbc53cfb0e72049916f7e3fd1f8b5b92346057c0612e5279",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.PipelineNext\u003CTContext\u003E",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Pipeline/PipelineNode.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "03fa469cc15bbd8b6c76b1b83228272003bb70a5145a81d0132273b233171a31",
+        "types": []
+      },
+      {
+        "source": "Framework/Utility/Pipeline/StepResult.cs",
+        "module": "Utility/Pipeline",
+        "sha256": "738437b9941c240587ca75414b41b95ba23d04d127865e88aa9b1d0504fa16ac",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Pipeline.StepResult",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Singleton/ISingleton.cs",
+        "module": "Utility/Singleton",
+        "sha256": "9d0bc6434f8a876acf772a93a8d48145bd73de130e72a4fd7d6b3c1f7b030da9",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Singleton.ISingleton",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Utility/Singleton/Singleton.cs",
+        "module": "Utility/Singleton",
+        "sha256": "4908837d72a82b79ddd05bd72d3059ef171a1b747f05e98fff4bb9a09c6793e6",
+        "types": [
+          {
+            "name": "ObFramework.Utility.Singleton.Singleton\u003CT\u003E",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Adapter.Unity",
+    "sourceRoot": "ObFramework.Adapter.Unity",
+    "files": [
+      {
+        "source": "ObFramework.Adapter.Unity/Core/AGameLauncher.cs",
+        "module": "Core",
+        "sha256": "1e943c0a67b85a1ae5cc997d03dc69aedb7a7f373d25de756aa0b543fd3d4ad5",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Core.AGameLauncher",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Core/UnityFrameLoopBridge.cs",
+        "module": "Core",
+        "sha256": "0ca05f509baddbe6136ff7f1ad1d6e6df78a83c4ee007821db844efc991f3e5a",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Core.UnityFrameLoopBridge",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs",
+        "module": "Core",
+        "sha256": "2b42aba54d88cf345b4b457a90ef640bb16e365457f499070ba12ef0e1a6bfab",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Core.UnityRuntimeHost",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Core/ViewController.cs",
+        "module": "Core",
+        "sha256": "f0a343ab1be956231aa8d037bce29b67c16d079f55e44cef2ddbc6d50ac52e1a",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.UI.AViewController",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Diagnostics/UnityDiagnostics.cs",
+        "module": "Diagnostics",
+        "sha256": "bde44e5f17cd55c07bd7a525f3cfdda36eb97a03caadf2444eea661a6064e1a6",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Diagnostics.UnityDiagnostics",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Diagnostics/UnityLogSink.cs",
+        "module": "Diagnostics",
+        "sha256": "3acdc0b354c267b8cb57ac443d03f35d0c106f38484ccdf8a8ccb5245ee183cf",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Diagnostics.UnityLogSink",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/BindingTablePath.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "f357258b396a72a0039a396f8025ec23a9d994deacbb325c55e2bb99ebbb54e8",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.BindingTablePath",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/BindingTableRow.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "2d8627b3f1f3551ebd40fb2b683cce0c5b6dee74fcb9e73c67130c856b26d7c7",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIComponentKind",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIBindMode",
+            "line": 35
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIComponentKindInfo",
+            "line": 48
+          },
+          {
+            "name": "ObFramework.Editor.Core.BindingTableRow",
+            "line": 140
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorDiagnostic.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "69e8c916ff0c02b85b3f9e3d7fef5a5788c2ef2615c3ee3f2c41b634792c5f68",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnosticSeverity",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnosticCodes",
+            "line": 24
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnostic",
+            "line": 105
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorFrameworkNames.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "7ea871df7883f29cba93eb34b2286acd8b580bf3ded016bf5c3f850f076f65ce",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorFrameworkNames",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "d83a46bd4cc352133cb1f40dbbee564e495f03473fea60335a99f871a46e2738",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorGenerationRequest",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationResult.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "814acc1ff0a80001242056d73f999eadf73f923f20c584b7b231c0fa587925e1",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.GeneratedFileKind",
+            "line": 9
+          },
+          {
+            "name": "ObFramework.Editor.Core.GeneratedFile",
+            "line": 25
+          },
+          {
+            "name": "ObFramework.Editor.Core.DestructiveChangeKind",
+            "line": 57
+          },
+          {
+            "name": "ObFramework.Editor.Core.DestructiveChange",
+            "line": 72
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorGenerationResult",
+            "line": 126
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorNaming.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "e509d34ebdf75e42af67eadb3ccead1334b818e71eb9d2792628f7b853cd4ac0",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorNaming",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorTemplateGenerator.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "2baf04bb70e6d915de33cee5d711465970052c4d720d84f922b9f0af09b1205c",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorTemplateGenerator",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/SourceTextMerger.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "d9d2abb66001885b59529189a0b08a509c8d2333e47e76ab914b0b35c352ecc3",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UIRegistryGeneration.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "655031918c624611644a1cf8d18f03b86614ec4367143f9a8e24bfb88cf615df",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryEntry",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryGenerationInput",
+            "line": 26
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryResolvedEntry",
+            "line": 60
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryGenerationOutput",
+            "line": 88
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UIRegistrySourceGenerator.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "91b5c561717e065c16e919d5568f9906f05133dff615bbac8e4dbbb4fd1cb5be",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIRegistrySourceGenerator",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupOverridesJson.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "cce033f6739f040ceb16bf5e46854c20714120464ccc29866cff806ef8ac0227",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupOverridesJson",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupSnapshot.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "ed9381d1be6b3f7438a2f1142efb2623b8a4bb5644257a578816a4415406f838",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupSection",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshot",
+            "line": 40
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshotResult",
+            "line": 126
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupPaths",
+            "line": 145
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupSnapshotFactory.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "2e1997bd8e66d6e021943716d219c5709fd2088941eeb4f1d952df9337fbee0c",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshotFactory",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/ViewTemplateGenerator.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "74985c6d286fec48f1a4865edba9e717f392ad581e5ddaca432b2d46969043a8",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/WindowTemplateGenerator.cs",
+        "module": "EditorDeploy/Core",
+        "sha256": "3bb53421c65a4757e58216713a38a2f4aac2938a813faa2a323ca09f331ec876",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfBatchValidation.cs",
+        "module": "EditorDeploy",
+        "sha256": "8a7dd65836c4e4abff59931910c6b58fc4a0e267772a26b21126afe27c5e6620",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.EditorTools.ObfBatchValidation",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiBindingTable.cs",
+        "module": "EditorDeploy",
+        "sha256": "3528e30c04e011bfbf47abd57ab2a54daf35da98c227a36d55c96b760694a3c8",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiBindingTableWindow.cs",
+        "module": "EditorDeploy",
+        "sha256": "6b57d81be378fee917ef0a924c187b7bbd2bc18a3e92377e80691490de2c9148",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiGeneration.cs",
+        "module": "EditorDeploy",
+        "sha256": "b3e209d6481ff22bb51f6b29e73f8324121e708f74d61a24dd0cc9d03ad7f14c",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiMenus.cs",
+        "module": "EditorDeploy",
+        "sha256": "d82b41c0aa83d22e9e62f8f110922805bc3b88a124d783ab87d5c4a2de4afd2f",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiRegistryCommands.cs",
+        "module": "EditorDeploy",
+        "sha256": "020eeb4c471da1f7b7ae057908d62a421c55ef04621d74e2c524d23515eec5cc",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/ObfUiSetup.cs",
+        "module": "EditorDeploy",
+        "sha256": "9d1e3067b59e90d4c47b39e66aa50427ee19fa618c0ba148641c67876c4d4ca8",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Extension/CoreExtension.cs",
+        "module": "Extension",
+        "sha256": "40db78e09587457f02191d475396f7aec340981368ada9c780f663a73fe421bd",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Extension.CoreExtension",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Extension/ObExecutionScopeExtension.cs",
+        "module": "Extension",
+        "sha256": "4f127ca823957c6de90222fc356b8bfc41c8613cbbc97fa802fd2faed1e7c11c",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Extension.ObExecutionScopeExtension",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Integrations/Addressables/AddressablesAssetAdapter.cs",
+        "module": "Integrations/Addressables",
+        "sha256": "3e8183e17055e6264e9bc9b416637738a262eb9e8d2228f68b2cfae474d928f7",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Resource.AddressablesAssetAdapter",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/UI/AUIWindow.cs",
+        "module": "UI",
+        "sha256": "f1499b4c545f7bfd2931b6951d885dfffd3de50b426ae7589dbcfe03b34553ff",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.UI.AUIWindow",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/UI/UIRoot.cs",
+        "module": "UI",
+        "sha256": "9e97b2b80cf7186c9f531d8e72ebdf0dda9aa9d01b792e8bb38d22565e68cbd9",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.UI.UIRoot",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/UI/UnityUIAdapter.cs",
+        "module": "UI",
+        "sha256": "f9ea0115fff921b2768a38854fc35ed480ed8d5c5e1b2ce9941f91bc967837af",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.UI.UnityUIAdapter",
+            "line": 22
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/BindViewAttribute.cs",
+        "module": "ViewBinding",
+        "sha256": "5b9b9c178959bcb3a7ff88d56d66feb5b37306057a112187ef20989c047acc45",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.BindViewAttribute",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs",
+        "module": "ViewBinding",
+        "sha256": "04694ee4117cf0ecf53c1a4ba4ff0fd05aabf89e0869458c69271391530c8a9e",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.GeneratedUIBindingRuntime",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs",
+        "module": "ViewBinding",
+        "sha256": "7583dda804b41cb19d9ea005adfc59517b8fb75fbe6d804a009cfd3ec0ef6305",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.IGeneratedViewBinding",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.GeneratedViewBinding",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/IGeneratedUIBinding.cs",
+        "module": "ViewBinding",
+        "sha256": "5aea1fe7ac17f9099d2cff6ab9b2939b1d13fe3ef94cdb6cdf8c9732ebe959ef",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.IGeneratedUIBinding",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/ObUnity.cs",
+        "module": "ViewBinding",
+        "sha256": "486db5e857887dc7b64c058868b51a19aa667add1f1e7033fc980dace47df904",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.ObUnity",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/UIBindCommandAttribute.cs",
+        "module": "ViewBinding",
+        "sha256": "9c19695eafa29fa9e78abde858ddd112095c0b37bb1d3e9df1c24366c4bee70f",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.UIBindCommandAttribute",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/UIBindDataAttribute.cs",
+        "module": "ViewBinding",
+        "sha256": "049e95b3e11bcff25b815ae08d92fc1905654f416cc52ef0770bea65f09f70ff",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.UIBindDataAttribute",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/UIBindMode.cs",
+        "module": "ViewBinding",
+        "sha256": "e5f06496e359c5c2c8e0e493d0045f5de89320eacd7376c50e485995113054ed",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.ViewBinding.UIBindMode",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/UnityViewBindings.cs",
+        "module": "ViewBinding",
+        "sha256": "dcb0bb3fcdd6de64ea4596ad41f179ac210a3f5aef94a3f88988e3c620cf725d",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/ViewBinding/ViewBinding.cs",
+        "module": "ViewBinding",
+        "sha256": "5b65694a8ff05ad5ac04cdbe552d14001a23be4fbd7da4469ee0503bf83f8ecd",
+        "types": []
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Adapter.Godot",
+    "sourceRoot": "ObFramework.Adapter.Godot",
+    "files": [
+      {
+        "source": "ObFramework.Adapter.Godot/Core/AGameLauncher.cs",
+        "module": "Core",
+        "sha256": "a2bd2f096bab1988973d4d1ce1be728e439760a41d6f45292b74fc0fe81fd1cd",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Core.AGameLauncher",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Core/AViewController.cs",
+        "module": "Core",
+        "sha256": "e264d1c447742f65b29f6fdca72fe75c6ddf60f0d50420d618c29981c4b5df10",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Core.AViewController",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs",
+        "module": "Core",
+        "sha256": "28f6e94cedc816eb4af65717efc3cbc64b323668466c749415620ceb6338c8dc",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Core.GodotFrameLoopBridge",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Core/GodotLateFrameLoopNode.cs",
+        "module": "Core",
+        "sha256": "b26d8c5b0c1cf3c224ad41e5efaf5e5ec47870ecd1397435dccee16b293c8fa3",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Core.GodotLateFrameLoopNode",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs",
+        "module": "Core",
+        "sha256": "5c43b4230bb498c8297b466f4025e6b9bcf42cfb2cfe496021081f11da0885f6",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Core.GodotRuntimeHost",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Diagnostics/GodotDiagnostics.cs",
+        "module": "Diagnostics",
+        "sha256": "6ad86e8e78e927c7415016a498ba1a1c7f7a70e4c06444b07bd76779f08c0b3e",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Diagnostics.GodotDiagnostics",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Diagnostics/GodotLogSink.cs",
+        "module": "Diagnostics",
+        "sha256": "1ba33648ac0c2f4bef33551b12b8f0fbde2db486f61cdfa7b57f70d7208845f4",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Diagnostics.GodotLogSink",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/Resource/GodotAssetAdapter.cs",
+        "module": "Resource",
+        "sha256": "483f86f3cd3f7f3412850e1e2d317eaddff944088476fcefdd4db11923f646c3",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.Resource.GodotAssetAdapter",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/UI/AUIWindow.cs",
+        "module": "UI",
+        "sha256": "3ec615ee8914ef74a9b6ad20de906805c071ea286fab6276fb501343a222cc7e",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.UI.AUIWindow",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs",
+        "module": "UI",
+        "sha256": "8b4d1594fa524d5aa58f8c3b6a3b2ad4175268884dff7d1bec6c197e87e9d4b4",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.UI.GodotUIAdapter",
+            "line": 39
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/UI/UIRoot.cs",
+        "module": "UI",
+        "sha256": "d6ddaad54f30863a1ba34ed092de1f212b3b5be8a5c65ac1315901bc67f89085",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Godot.UI.UIRoot",
+            "line": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Adapter.UnrealSharp",
+    "sourceRoot": "ObFramework.Adapter.UnrealSharp",
+    "files": [
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/Core/AGameLauncher.cs",
+        "module": "Core",
+        "sha256": "4629e29e88cfbf7c7e167f6c27b767a15662975ceac12c2c703fdae4e0e2abd0",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Core.AGameLauncher",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/Core/UObFrameworkSubsystem.cs",
+        "module": "Core",
+        "sha256": "bdeab8d7a99eeef687aa5c8eb28f2651c6b142840ba789b9d032bafe4d7a8234",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Core.UObFrameworkSubsystem",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/Diagnostics/UnrealDiagnostics.cs",
+        "module": "Diagnostics",
+        "sha256": "1fa879c54da40eeae9776efc113e76d72564e96cbb889b0039af5ba6f9dda6f0",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Diagnostics.UnrealDiagnostics",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/Diagnostics/UnrealLogSink.cs",
+        "module": "Diagnostics",
+        "sha256": "b43e1adaf2e99ba11b7e0f4d1fa6005be2deb7322c34951a4928fead20b2d029",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Diagnostics.ObFLog",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Diagnostics.UnrealLogSink",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/Resource/UnrealAssetAdapter.cs",
+        "module": "Resource",
+        "sha256": "3549a057914d58a44ef5f082232242dd4f696ae9273c7f7718c060705e198a8f",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.Resource.UnrealAssetAdapter",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/UI/AUIWindow.cs",
+        "module": "UI",
+        "sha256": "88a18d235d31e8d22bc9ad9e9ad86b06b0809efb7b97a952af02d3a7ddf02f2f",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.UI.AUIWindow",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/UI/UIRoot.cs",
+        "module": "UI",
+        "sha256": "e7f342eefae2ea489e257c407c2a761f0c401719d83d35c82db7a169016dee5a",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.UI.UIRoot",
+            "line": 4
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.UnrealSharp/UI/UnrealUIAdapter.cs",
+        "module": "UI",
+        "sha256": "312da01ca3db249b4c52416d0fd4ac22b8c559242094f97e4bc9e3b9fe6aa4c0",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.UnrealSharp.UI.UnrealUIAdapter",
+            "line": 40
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Cli",
+    "sourceRoot": "ObFramework.Cli",
+    "files": [
+      {
+        "source": "ObFramework.Cli/Commands/ClearCommand.cs",
+        "module": "Commands",
+        "sha256": "c702a530b989263715b807917b08d11d0192f784744749908a174544927bc161",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/ConfigCliModule.cs",
+        "module": "Commands/Config",
+        "sha256": "241c0f7c3001f50c72a9fe5210b332e8eff3b6605684a0821257349f3802d1a6",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.ConfigCliModule",
+            "line": 16
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/ConfigCommand.cs",
+        "module": "Commands/Config",
+        "sha256": "7395d8f7567c8227fcb92fd1d7f6e3932a3a73d6b4c4e77c8d3ffe45741ad603",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/ISetupConfigModule.cs",
+        "module": "Commands/Config",
+        "sha256": "0227d5e9be8523c9f5fc52efa6f4893e4afe9641fea6405c51589b5588dd63ce",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.ISetupConfigModule",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigModule\u003CTConfig\u003E",
+            "line": 30
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/ModuleConfigRegistry.cs",
+        "module": "Commands/Config",
+        "sha256": "256b79a1539ae07eb3ca472dee3613b3b9368a714ae58445db2ccad271a751ab",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.ModuleConfigRegistry",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs",
+        "module": "Commands/Config/Modules",
+        "sha256": "4eeb99e1fd963e15e879a11e64002d21f2ef8ae0cd062c90b3ef200e9a9b098e",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.Modules.LubanSetupConfig",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/Modules/UnitySetupConfig.cs",
+        "module": "Commands/Config/Modules",
+        "sha256": "b285b44f35bc022c9f40ca2acf8ad677f9558486ae2e5e0b566901c2258ec21f",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.Modules.UnitySetupConfig",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupConfigException.cs",
+        "module": "Commands/Config",
+        "sha256": "1e108e240c0ca23989e2842d4fd3d2729de83ca4d1b9a80bb7925afe22c1986e",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigException",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupConfigPaths.cs",
+        "module": "Commands/Config",
+        "sha256": "eeaa09130f123eb1c3286c73ba394bdf09d173ef15c77bb7bb94f29e884be46e",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigPaths",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupConfigRegistration.cs",
+        "module": "Commands/Config",
+        "sha256": "836b71f3a832d6227434e458b152db64f7398475802c952594ae94ae9e5a7beb",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigRegistration",
+            "line": 9
+          },
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupPathValue",
+            "line": 215
+          },
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupPathNormalizationResult",
+            "line": 235
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupConfigValues.cs",
+        "module": "Commands/Config",
+        "sha256": "04d65a8b0f152158b892cfebb74c4d33ea6c5ef622a259cd971a0c7b1725faf8",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigValues",
+            "line": 16
+          },
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupConfigPropertyValue",
+            "line": 255
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupJsonDiscovery.cs",
+        "module": "Commands/Config",
+        "sha256": "19e829ed8a479754f46c636dc7b7786eab297d89fc9a1f2715fc60cd81224d1b",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupJsonDiscovery",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupJsonDocument.cs",
+        "module": "Commands/Config",
+        "sha256": "2ae4dacfedba2280c822a02c2d0c5fdb4f8b9a8d7c4041ff0521e28d0ba707bd",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupJsonDocument",
+            "line": 27
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/SetupPathAttribute.cs",
+        "module": "Commands/Config",
+        "sha256": "c1780bca9bfe58cf6e460dc2f6072b47af8f0013dcb603b70553be0937b12db5",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.SetupPathAttribute",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/CreateCommand.cs",
+        "module": "Commands",
+        "sha256": "3a937730f28ef21f60220d2407f4947934c2d2fde7393a906031650ad8139d4f",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/DoctorCommand.cs",
+        "module": "Commands",
+        "sha256": "0df0a29d7dccdabbee6d04c79148ab1c8f38563dd3f2580605dcee5e6036635b",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/ExitCommand.cs",
+        "module": "Commands",
+        "sha256": "7f4a7d590dc1db11dcde4146d81832e6ea9f1fad5726baffac51b02c3de74ed9",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/HelpCommand.cs",
+        "module": "Commands",
+        "sha256": "178064395fa33bd658c2327666d858ab08f29edaed84bb63ecbad09d3873c046",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/EngineKind.cs",
+        "module": "Commands/Init",
+        "sha256": "6302f0575228f6bd551f79333211e3284765ca5b3299c17a65420fcb847c6771",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/EngineProject.cs",
+        "module": "Commands/Init",
+        "sha256": "1c464c504bf9d47477d0f5bdd1a0bf41b4f84c09edadaee7ca09a9daed432cfc",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/InitCliModule.cs",
+        "module": "Commands/Init",
+        "sha256": "62b839bc3efdcb83e4fe2b2f4b69e83687192561b8c1e30963f3a15d3775e4f1",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/InitCommand.cs",
+        "module": "Commands/Init",
+        "sha256": "d1bb1e679c1b3d743d068cf0500bea558e3225230f7df4fac4e6c95b159399a1",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/InitContext.cs",
+        "module": "Commands/Init",
+        "sha256": "c07d5e9cfc747175ed41ce81e7e2be30aac4d05cd9a2ed8d8c5897d2cd028a30",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/LubanInstallStep.cs",
+        "module": "Commands/Init",
+        "sha256": "abff545daaafa321816c5e35cc736bf77e6a2b8aae2ee90ba0cd54509fa0af73",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/LubanReleaseInstaller.cs",
+        "module": "Commands/Init",
+        "sha256": "77f1a8f155a49ba19532ed0559178693a44a7db41fa813fe6c320219bab6e3b8",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/SetupInitStep.cs",
+        "module": "Commands/Init",
+        "sha256": "f13d5cd814b7a2349455d83a28752a6829de98b9c1f43786ec9b22ae3ff7b7e9",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/UnityEditorInitStep.cs",
+        "module": "Commands/Init",
+        "sha256": "9e133a8ae23cc9199df5909bf7cd8f7ced7689a3d6c8b486af43476a4e7939ec",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/UnityPackagesInitStep.cs",
+        "module": "Commands/Init",
+        "sha256": "ee39df9c87ffd7e4757ff24945b29c6986ecfe0e0d24fbdb6dd0b42838465511",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/ListCommand.cs",
+        "module": "Commands",
+        "sha256": "38f100f6a9df880b55b1504efc6df2968c3d5bd64869b76b6a0255d64a1eb355",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Reference/ReferenceCommand.cs",
+        "module": "Commands/Reference",
+        "sha256": "94fc432c15af44f8ae03dbd06bdfa44926dd2583459de22442ec29d1e2d8a58e",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Reference.ReferenceSettings",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Cli.Commands.Reference.ReferenceCommand",
+            "line": 25
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Reference/ReferenceNode.cs",
+        "module": "Commands/Reference",
+        "sha256": "7ead709d899a6ea72cdad332dd78b883d9e11ba6200974d4776eb82ce917f9a1",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Reference.ReferenceNode",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Table/LubanRunner.cs",
+        "module": "Commands/Table",
+        "sha256": "38ae503935ef344780214989c56510f2dbb4350818d579fe82563b37943f3c47",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Table/LubanTemplateDirectory.cs",
+        "module": "Commands/Table",
+        "sha256": "522b9164a3b878ffff5f02ac9d528d3a9edb615feb9271e55823e078e0d53498",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Table/TableCliModule.cs",
+        "module": "Commands/Table",
+        "sha256": "db01278ad1d4a47e162fe283b0d87e026858d829d9c37c779bfe0ce8017ab657",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Table.TableCliModule",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Table/TableCommand.cs",
+        "module": "Commands/Table",
+        "sha256": "874411e94fcec098f31c4347fab938af7c927cebfef80b014939f5118bbbf1aa",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/UnityCommand.cs",
+        "module": "Commands",
+        "sha256": "120599c9339abc4da4c8fad2544f0a1c7db14a8c6af88805021e00c65c9df101",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Core/CliModule.cs",
+        "module": "Core",
+        "sha256": "55309ec8a25e741dc5e0720b1e9e2a2c294bc5097d5d11ef39a28b5c8e227160",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Core.CliModule",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Core/CliSessionState.cs",
+        "module": "Core",
+        "sha256": "2da6a0fd41f94ef1af650ef92a707d5d5d7568fa24913a643393b22d943cab49",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/DeployableFileSource.cs",
+        "module": "Deployment",
+        "sha256": "00790ca67b48f5cb3a20863b51d530ab3f5b598ad957aba139d4e73cba3d5d8a",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.IDeployableFileSource",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.EmbeddedDeployableFileSource",
+            "line": 36
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.DirectoryDeployableFileSource",
+            "line": 114
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/DeploymentException.cs",
+        "module": "Deployment",
+        "sha256": "beaa8ba9a3c6b9bde1ff462302de528781a03fe6299e82e2bff81543cfc4e3a0",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentException",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/DeploymentManifest.cs",
+        "module": "Deployment",
+        "sha256": "a11ef95d9481831e590ce9520f0108c454ed763e238374c270bde13edfcdad52",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentManifest",
+            "line": 21
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.DeployableFile",
+            "line": 270
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/DeploymentPaths.cs",
+        "module": "Deployment",
+        "sha256": "cc6e33b3c1fe315d126b9b2669586b05a835ef92d54a42cf4bc53e81e464c63d",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/DeploymentResult.cs",
+        "module": "Deployment",
+        "sha256": "f934e4136f367569a45be7effbfa1b05aa8149ddeb04502f49a14baf3486b6ab",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentChangeKind",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentFileChange",
+            "line": 30
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentOptions",
+            "line": 50
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.DeploymentResult",
+            "line": 57
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs",
+        "module": "Deployment",
+        "sha256": "2aed3339631e224be1439c9b774c98f2b2a4efe99ce6760e7b761151b56b6ea7",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.OwnedDeploymentManifest",
+            "line": 22
+          },
+          {
+            "name": "ObFramework.Cli.Deployment.OwnedDeploymentFile",
+            "line": 128
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/UnityDeployCliModule.cs",
+        "module": "Deployment",
+        "sha256": "c472cfe3144f50d424a9b22f8d7a85bed87daef32b220589577d155ce24967c8",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.UnityDeployCliModule",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Deployment/UnityEditorDeployer.cs",
+        "module": "Deployment",
+        "sha256": "9b62fb2f5fcae643be4ac8b2ffd0aacd0a298f3ebce3cfac7627bbea31ef5d0c",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Deployment.UnityEditorDeployer",
+            "line": 28
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Program.cs",
+        "module": "",
+        "sha256": "41beb78121244110a61d3f42a2b948b93f38c9fdfc03c967e8805bfc32f0ab51",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/NuGetLayout.cs",
+        "module": "Unity",
+        "sha256": "23404de533ec73ae79a680a9a602e6f2f3be546990a7e3c0068220602c9a47e0",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/ToolProcess.cs",
+        "module": "Unity",
+        "sha256": "8bbcfe7f4836b9204028a3fd1b9a2e2246451f436e9481fd855990f6b8f2e428",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityDoctor.cs",
+        "module": "Unity",
+        "sha256": "cb69c85d6f9c0aa0e751e8314fe31375bf81c2cc1443b745cb72ba5610e6bb26",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityIntegrationInstaller.cs",
+        "module": "Unity",
+        "sha256": "098dd9933b70bee64435f2beae7200024df53f005656cc340a5d03e160fb6f3c",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityPackageInstaller.cs",
+        "module": "Unity",
+        "sha256": "5f45e1c822f975e3e77395689f453c04052b9aa9f0e405c0d8829b69ab636ff0",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityProject.cs",
+        "module": "Unity",
+        "sha256": "244211ed4b0ed91fb15e0ce1105fcc8fe79f5b482ea13863acd90d08bdc99eff",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Utility/ReferenceNodeHelper.cs",
+        "module": "Utility",
+        "sha256": "2d902814656c7bdc4bf98734579331b1a2fabcfb86cb097f1d8c1aceed60c6b0",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Utility.ReferenceNodeHelper",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Utility/TemplateGenerateHelper.cs",
+        "module": "Utility",
+        "sha256": "96198485bb5a509012855487b221f2ae442ee656d7d0b0e1aa55d05c40a87583",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Utility/TemplateRendererHelper.cs",
+        "module": "Utility",
+        "sha256": "e5b20268304f87ab2623e11f975bf041dd756159a748c66b0a639ddc6be55a1f",
+        "types": []
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Editor.Core",
+    "sourceRoot": "ObFramework.Adapter.Unity/EditorDeploy/Core",
+    "files": [
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/BindingTablePath.cs",
+        "module": "",
+        "sha256": "f357258b396a72a0039a396f8025ec23a9d994deacbb325c55e2bb99ebbb54e8",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.BindingTablePath",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/BindingTableRow.cs",
+        "module": "",
+        "sha256": "2d8627b3f1f3551ebd40fb2b683cce0c5b6dee74fcb9e73c67130c856b26d7c7",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIComponentKind",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIBindMode",
+            "line": 35
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIComponentKindInfo",
+            "line": 48
+          },
+          {
+            "name": "ObFramework.Editor.Core.BindingTableRow",
+            "line": 140
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorDiagnostic.cs",
+        "module": "",
+        "sha256": "69e8c916ff0c02b85b3f9e3d7fef5a5788c2ef2615c3ee3f2c41b634792c5f68",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnosticSeverity",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnosticCodes",
+            "line": 24
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorDiagnostic",
+            "line": 105
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorFrameworkNames.cs",
+        "module": "",
+        "sha256": "7ea871df7883f29cba93eb34b2286acd8b580bf3ded016bf5c3f850f076f65ce",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorFrameworkNames",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs",
+        "module": "",
+        "sha256": "d83a46bd4cc352133cb1f40dbbee564e495f03473fea60335a99f871a46e2738",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorGenerationRequest",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationResult.cs",
+        "module": "",
+        "sha256": "814acc1ff0a80001242056d73f999eadf73f923f20c584b7b231c0fa587925e1",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.GeneratedFileKind",
+            "line": 9
+          },
+          {
+            "name": "ObFramework.Editor.Core.GeneratedFile",
+            "line": 25
+          },
+          {
+            "name": "ObFramework.Editor.Core.DestructiveChangeKind",
+            "line": 57
+          },
+          {
+            "name": "ObFramework.Editor.Core.DestructiveChange",
+            "line": 72
+          },
+          {
+            "name": "ObFramework.Editor.Core.EditorGenerationResult",
+            "line": 126
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorNaming.cs",
+        "module": "",
+        "sha256": "e509d34ebdf75e42af67eadb3ccead1334b818e71eb9d2792628f7b853cd4ac0",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorNaming",
+            "line": 14
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorTemplateGenerator.cs",
+        "module": "",
+        "sha256": "2baf04bb70e6d915de33cee5d711465970052c4d720d84f922b9f0af09b1205c",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.EditorTemplateGenerator",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/SourceTextMerger.cs",
+        "module": "",
+        "sha256": "d9d2abb66001885b59529189a0b08a509c8d2333e47e76ab914b0b35c352ecc3",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UIRegistryGeneration.cs",
+        "module": "",
+        "sha256": "655031918c624611644a1cf8d18f03b86614ec4367143f9a8e24bfb88cf615df",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryEntry",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryGenerationInput",
+            "line": 26
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryResolvedEntry",
+            "line": 60
+          },
+          {
+            "name": "ObFramework.Editor.Core.UIRegistryGenerationOutput",
+            "line": 88
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UIRegistrySourceGenerator.cs",
+        "module": "",
+        "sha256": "91b5c561717e065c16e919d5568f9906f05133dff615bbac8e4dbbb4fd1cb5be",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UIRegistrySourceGenerator",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupOverridesJson.cs",
+        "module": "",
+        "sha256": "cce033f6739f040ceb16bf5e46854c20714120464ccc29866cff806ef8ac0227",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupOverridesJson",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupSnapshot.cs",
+        "module": "",
+        "sha256": "ed9381d1be6b3f7438a2f1142efb2623b8a4bb5644257a578816a4415406f838",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupSection",
+            "line": 13
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshot",
+            "line": 40
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshotResult",
+            "line": 126
+          },
+          {
+            "name": "ObFramework.Editor.Core.UISetupPaths",
+            "line": 145
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/UISetupSnapshotFactory.cs",
+        "module": "",
+        "sha256": "2e1997bd8e66d6e021943716d219c5709fd2088941eeb4f1d952df9337fbee0c",
+        "types": [
+          {
+            "name": "ObFramework.Editor.Core.UISetupSnapshotFactory",
+            "line": 12
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/ViewTemplateGenerator.cs",
+        "module": "",
+        "sha256": "74985c6d286fec48f1a4865edba9e717f392ad581e5ddaca432b2d46969043a8",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/WindowTemplateGenerator.cs",
+        "module": "",
+        "sha256": "3bb53421c65a4757e58216713a38a2f4aac2938a813faa2a323ca09f331ec876",
+        "types": []
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Generator",
+    "sourceRoot": "ObFramework.Generator",
+    "files": [
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdeDiagnostics.cs",
+        "module": "Integrated/CDE",
+        "sha256": "455963f8954dc28f66f693a377a6ea08a891c8e3f8d268fe1dc13ec1ccb40e5a",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdeGenerator.cs",
+        "module": "Integrated/CDE",
+        "sha256": "22771ed6d1bfb69f377db4ea2b3d7dbb7221bda7db029bb3f3a798831361bf01",
+        "types": [
+          {
+            "name": "ObFramework.Generator.Integrated.CDE.CdeGenerator",
+            "line": 15
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdePlanner.cs",
+        "module": "Integrated/CDE",
+        "sha256": "c002b6348e2fd04ae58a254b47b7cf7f2a98d78763a7f1faff245ea266303304",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdeSourceRules.cs",
+        "module": "Integrated/CDE",
+        "sha256": "ce57a737069c9257129156adf541c9e1b94104fcfbb54edd918c5c26383e62f7",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdeSymbols.cs",
+        "module": "Integrated/CDE",
+        "sha256": "35518c5cd827c33aedb7a2597b1314d1f3e43af369ad7c1bc055ca68393dd402",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/CDE/CdeViewEmitter.cs",
+        "module": "Integrated/CDE",
+        "sha256": "7c56434ce966e3b5b0410b7a3b92a288615df22e8fc3f426f1556027f5fd6d59",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/Save/SaveEmitter.cs",
+        "module": "Integrated/Save",
+        "sha256": "2e027b47d7c47bd75e34368fc85c3e9fa0204009430a992b58b3bda8920d3fcf",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator/Integrated/Save/SaveGenerator.cs",
+        "module": "Integrated/Save",
+        "sha256": "c4faa73582aa529b10bc891570b90b94cfab580cf47b92cf4052e4618101ff22",
+        "types": [
+          {
+            "name": "ObFramework.Generator.Integrated.Save.SaveGenerator",
+            "line": 9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "project": "ObFramework.Generator.Unity",
+    "sourceRoot": "ObFramework.Generator.Unity",
+    "files": [
+      {
+        "source": "ObFramework.Generator.Unity/GenerationContext.cs",
+        "module": "",
+        "sha256": "07669a9afb59879a3ab215c5b98645d9c8496ec67a879b10b7eace6a3b834e96",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator.Unity/UIBindingEmitter.cs",
+        "module": "",
+        "sha256": "feaea20c7b0aa9e8c40ac19f7a5e47f9e60aa258bbc33b42c8de7bdbda6a1d45",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator.Unity/UIBindingSupport.cs",
+        "module": "",
+        "sha256": "9430854539ab52bf3679cd754546a1515c3766f403182882f92d66dc26d00ad9",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Generator.Unity/ViewBindingGenerator.cs",
+        "module": "",
+        "sha256": "086aba1145b783389f08ed679e7235f7d958b0156f114f51970eb1f22a6f4800",
+        "types": [
+          {
+            "name": "ObFramework.Generator.Unity.ViewBindingGenerator",
+            "line": 14
+          }
+        ]
+      }
+    ]
+  }
+]

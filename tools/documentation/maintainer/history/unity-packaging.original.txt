@@ -1,0 +1,92 @@
+# Unity packaging and initialization
+
+The Unity runtime package has no Addressables or YooAsset reference. Resource providers implement
+`IAssetAdapter<TNativeHandle>` and optionally `IRawFileAdapter<TNativeHandle>`, then register through
+`ResourcePlugin.Create(adapter)`. `UnityUIAdapter` consumes that resource plugin.
+
+## Build the three packages
+
+From `Framework/`, with a .NET 8 or newer SDK and Unity 2022.3 installed:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/pack-unity.ps1 -UnityEditorPath "D:/Program Files/Unity Editor/2022.3.58.f1/Editor"
+```
+
+`UnityEditorPath` is the Editor directory, not Unity.exe. Alternatively pass
+`-p:UnityEditorDataRoot=<Editor/Data/Managed>` to individual dotnet builds. Ordinary IDE/CLI builds
+also discover installations in the usual Unity Hub directory and, on Windows, the repository
+drive's `Program Files/Unity Editor` directory. Unity 2022.3 is preferred. For a custom installation
+parent directory set `UnityEditorsRoot`; explicit UnityEditorPath/UnityEditorDataRoot take precedence.
+The default build never needs Addressables DLLs or another Unity project's Library. UnityEngine
+references are build-only; engine assemblies must not be copied into nupkg files.
+
+Output: `Framework/artifacts/nupkg/` containing matching versions of:
+
+- ObFramework
+- ObFramework.Adapter.Unity
+- ObFramework.Cli (dotnet tool, command `ob`)
+
+Generators and Editor tools are embedded in CLI; users do not install separate generator packages.
+The runtime nupkg deliberately contains no Editor source contentFiles, avoiding a second import of
+the tools deployed by CLI. Generated API XML documentation accompanies runtime assemblies.
+
+## Install and initialize
+
+```powershell
+dotnet tool install --global ObFramework.Cli --version 0.1.0-preview.1 --add-source "D:/LocalFeed"
+ob init --root "D:/UnityProjects/MyGame" --engine unity --source "D:/LocalFeed"
+ob doctor --root "D:/UnityProjects/MyGame" --json
+ob doctor --root "D:/UnityProjects/MyGame" --unity --unity-editor "D:/Unity/Editor/Unity.exe"
+```
+
+Close Unity during init. A new NuGetForUnity installation uses the OpenUPM scoped registry;
+existing dependency selections, other registry scopes and unrelated manifest fields are preserved.
+Init resolves the complete .NET Standard 2.1 NuGet graph through the SDK, preserves existing
+non-framework package versions, and restores with NuGetForUnity.Cli 4.5.0 targeting **net8.0** in a
+project-local tool directory. It does not require an extra global NuGetForUnity CLI installation.
+Feed conflicts/download failures exit nonzero and can be retried. Existing package sources and
+credentials are preserved. `--package-version` overrides the version (default: the CLI version).
+
+Init also prepares setup.json, installs Luban, deploys Editor tools/two analyzers and their metadata,
+and installs a quick-start guide at Assets/ObFramework/README.md. Missing required payload or
+conflicting/modified deployment files fail before the Editor payload is written.
+
+For manually restored packages use `--skip-packages`. `--skip-download` skips only Luban;
+doctor reports intentionally skipped missing Luban as a warning, rather than claiming it is installed.
+`.obf/` contains ignored local tools/cache/logs and creates its own .gitignore.
+
+## Optional Addressables integration
+
+On first initialization choose it explicitly:
+
+```powershell
+ob init --root "D:/UnityProjects/MyGame" --engine unity --resources addressables
+```
+
+The CLI preserves an installed compatible 1.21.x version, or adds 1.21.21 if absent. Incompatible or
+non-registry selections are rejected without silently changing them. It deploys source + a dedicated
+asmdef under Assets/ObFramework/Integrations/Addressables. Unity compiles that source against the
+user project's own UPM package. No provider DLL from the build machine is distributed.
+
+The namespace/type remains `ObFramework.Adapter.Unity.Resource.AddressablesAssetAdapter`. It now
+lives in the project's integration assembly. Consumers with explicit asmdef reference lists may
+need to reference `ObFramework.Integrations.Addressables` when using this optional type.
+
+Omitting --resources preserves a recorded backend; a new project defaults to custom. Switching a
+recorded backend is explicit: preserve/remove its old integration and update
+modules.installation.resources before re-running init. Customized adapters are never silently deleted.
+
+## Diagnostics and verification
+
+Doctor is read-only by default. Its JSON schema has a schemaVersion, success flag, and checks with
+stable OBD identifiers and pass/fail/warning/pending status. Static checks cover SDK/Unity baseline,
+configuration paths, framework package versions, deployed files, analyzer metadata, duplicate
+framework/provider DLLs, bundled engine DLLs, selected provider and configured Luban tools.
+`--unity` invokes Unity batch mode and writes Library/logs; OBD900 reports actual import/compilation.
+The Unity executable can also be supplied through UNITY_EDITOR_PATH. Logs are in .obf/doctor-unity.log.
+
+2026-11-16 validation: installation tests and the existing .NET suite; real Unity 2022.3 import and
+compilation both without Addressables and with optional Addressables source. Temporary acceptance
+projects and test runners have been removed. IL2CPP, platform builds and an application's own
+scenes/resource catalog remain application-level acceptance work. Init does not create or modify
+gameplay scenes.

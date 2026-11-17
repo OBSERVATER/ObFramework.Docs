@@ -1,0 +1,26 @@
+# Documentation verification
+
+Verified on 2026-11-17 against the current working tree, including its existing uncommitted implementation changes. This is a documentation check record, not an engine release acceptance report.
+
+| Check | Observed result |
+| --- | --- |
+| SDK/Roslyn API generation | Succeeded across all nine solution projects; 317 source-file entries, including 16 linked Editor.Core files; 375 public/protected type entries including test fixtures |
+| API regeneration `--check` | Passed; generated content and source inventory match |
+| Local links, heading anchors and source inventory | Passed; all maintained Markdown links resolved |
+| Broken-link negative probe | Correctly failed for an intentionally missing local target; probe removed |
+| Edited-generated-page negative probe | Correctly failed `--check` for an intentionally edited API page; original restored |
+| Managed documentation example | Compiled and printed `Documentation examples passed.` |
+| Skill frontmatter/name validation | Passed bundled skill-creator quick validator |
+| Independent Framework guide review | Corrected service lifecycle wording, Unity constructor requirements and the FSM transition-list prerequisite against source |
+
+The managed example checks observable behavior: current-value Query and equal-write Blackboard versions, shared asset entries, final-handle release, clear-on-return pooling, struct pipeline updates and logical timer firing. Source browsing checks the remaining guide excerpts; they are not all standalone programs.
+
+The local environment's network signature request failed during an initial restore attempt. The successful sample restore used the existing local package cache as a feed and wrote its own package cache under ignored artifacts. From `Framework/`, the successful commands were:
+
+```powershell
+$env:NUGET_PACKAGES = Join-Path (Get-Location) "artifacts/nuget-cache"
+dotnet restore samples/Documentation/DocumentationExamples.csproj --source "<user-profile>/.nuget/packages" -p:NetCoreTargetingPackVersion=8.0.7 -p:RuntimeFrameworkVersion=8.0.7 -p:UseAppHost=false
+dotnet run --project samples/Documentation/DocumentationExamples.csproj --no-restore -p:NetCoreTargetingPackVersion=8.0.7 -p:RuntimeFrameworkVersion=8.0.7 -p:UseAppHost=false
+```
+
+Those paths/pack versions describe the observed environment; normal users should use the portable commands in [maintenance](maintenance.md) and their configured feeds. The runtime build emitted existing nullable-reference/unused-field warnings. Production source behavior was not changed for these checks. The full NUnit suite, package publishing and real Unity/Godot/UnrealSharp execution were not run as part of this documentation change.
