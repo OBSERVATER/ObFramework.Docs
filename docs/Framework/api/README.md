@@ -15,6 +15,7 @@ Public and protected declarations (including implicit interface members and enum
 - [Integrated/Config](Integrated/Config.md)
 - [Integrated/Diagnostics](Integrated/Diagnostics.md)
 - [Integrated/Pooling](Integrated/Pooling.md)
+- [Integrated/Random](Integrated/Random.md)
 - [Integrated/Resource](Integrated/Resource.md)
 - [Integrated/Resource/Handle](Integrated/Resource/Handle.md)
 - [Integrated/Save](Integrated/Save.md)

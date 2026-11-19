@@ -20,6 +20,7 @@ For a local/private package feed, add `--add-source <FEED>` to tool installation
 | Task | Guide | Implementation |
 |---|---|---|
 | Install packages, tooling, and optional resources | [Initialization](Commands/Init.md) | `Commands/Init/`, `Unity/` |
+| Upgrade the CLI and a Unity project together | [Updates](Commands/Update.md) | `Commands/Update/` |
 | Inspect, edit, or validate development configuration | [Configuration](Commands/Config.md) | `Commands/Config/` |
 | Validate tables or generate config code/data | [Luban tables](Commands/Table.md) | `Commands/Table/` |
 | Inspect Unity setup and import/compile it | [Doctor](Unity/Doctor.md) | `Unity/UnityDoctor.cs` |

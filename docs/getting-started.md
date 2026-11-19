@@ -46,7 +46,7 @@ ob init --engine unity --root "D:/UnityProjects/MyGame" --source "D:/LocalFeed"
 ob doctor --root "D:/UnityProjects/MyGame" --json
 ```
 
-`init` installs framework packages, tooling and a consumer guide. It does not create gameplay scenes or resource catalogs. Build a launcher and register your Views using the [Unity guide](ObFramework.Adapter.Unity/README.md). Optional Addressables source integration is selected with `--resources addressables`; the base runtime package has no Addressables dependency. For repository packaging, see [Unity packaging](ObFramework.Adapter.Unity/packaging.md).
+`init` installs framework packages, tooling and a consumer guide. It does not create gameplay scenes or resource catalogs. Build a launcher and register your Views using the [Unity guide](ObFramework.Adapter.Unity/README.md). The optional [Addressables integration](ObFramework.Adapter.Unity/Integrations/Addressables.md) is selected in `setup.json`. For repository packaging, see [Unity packaging](ObFramework.Adapter.Unity/packaging.md).
 
 ## Choose a reading path
 

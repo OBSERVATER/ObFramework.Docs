@@ -638,6 +638,54 @@
         ]
       },
       {
+        "source": "Framework/Integrated/Random/DeterministicRandomStream.cs",
+        "module": "Integrated/Random",
+        "sha256": "c61a2d7103fde7664abf04de2382318a6d5391b643bfedd62f69888c38cf9fa8",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Random.DeterministicRandomStream",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Random/IRandomSource.cs",
+        "module": "Integrated/Random",
+        "sha256": "a2601d1bfb1e20153c77f669413a94c72cea14784426855dd6d6c77d53e6c85a",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Random.IRandomSource",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Integrated.Random.ARandomSource",
+            "line": 11
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Random/RandomPlugin.cs",
+        "module": "Integrated/Random",
+        "sha256": "d4de42c777b967007b92cfa734e34e47f8148ec9491f61a6f393e5e045547c1c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Random.RandomPlugin",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/Random/SystemRandomSource.cs",
+        "module": "Integrated/Random",
+        "sha256": "86f8d77eb63f8daefaaacec3801be2a134453f9022073a73bd59ac8ec3abfcbc",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.Random.SystemRandomSource",
+            "line": 3
+          }
+        ]
+      },
+      {
         "source": "Framework/Integrated/Resource/AssetEntry.cs",
         "module": "Integrated/Resource",
         "sha256": "95bcdb4ce397f74642d9c8af25b2f6471b55a8aebf45ae634dcfea59eb0b2b0b",
@@ -1935,6 +1983,17 @@
         ]
       },
       {
+        "source": "ObFramework.Adapter.Unity/Random/UnityRandomSource.cs",
+        "module": "Random",
+        "sha256": "647bf30ec81a9a73bb2ad79197106fb218d296b607105ef3b7e037f063d389f7",
+        "types": [
+          {
+            "name": "ObFramework.Adapter.Unity.Random.UnityRandomSource",
+            "line": 8
+          }
+        ]
+      },
+      {
         "source": "ObFramework.Adapter.Unity/UI/AUIWindow.cs",
         "module": "UI",
         "sha256": "f1499b4c545f7bfd2931b6951d885dfffd3de50b426ae7589dbcfe03b34553ff",
@@ -2507,7 +2566,7 @@
       {
         "source": "ObFramework.Cli/Commands/Init/InitCommand.cs",
         "module": "Commands/Init",
-        "sha256": "d1bb1e679c1b3d743d068cf0500bea558e3225230f7df4fac4e6c95b159399a1",
+        "sha256": "67f9e616ff80f559c91d8192159c17daa79a043ef39aa9318de38e3daf52d6c7",
         "types": []
       },
       {
@@ -2519,13 +2578,13 @@
       {
         "source": "ObFramework.Cli/Commands/Init/LubanInstallStep.cs",
         "module": "Commands/Init",
-        "sha256": "abff545daaafa321816c5e35cc736bf77e6a2b8aae2ee90ba0cd54509fa0af73",
+        "sha256": "cde98092187095b038bda0e9dcdff54098c9d31173147060e1806375dc968475",
         "types": []
       },
       {
         "source": "ObFramework.Cli/Commands/Init/LubanReleaseInstaller.cs",
         "module": "Commands/Init",
-        "sha256": "77f1a8f155a49ba19532ed0559178693a44a7db41fa813fe6c320219bab6e3b8",
+        "sha256": "b010bf7b4b1c51df3144e625c775fca6e3169cf6a8343cbc13c187e93acd5723",
         "types": []
       },
       {
@@ -2543,7 +2602,7 @@
       {
         "source": "ObFramework.Cli/Commands/Init/UnityPackagesInitStep.cs",
         "module": "Commands/Init",
-        "sha256": "ee39df9c87ffd7e4757ff24945b29c6986ecfe0e0d24fbdb6dd0b42838465511",
+        "sha256": "77509b9417791644c14fb5aee2b4c45523f8196524db88743b46f16dc87894a0",
         "types": []
       },
       {
@@ -2614,13 +2673,31 @@
         "types": []
       },
       {
+        "source": "ObFramework.Cli/Commands/Update/UpdateCatalog.cs",
+        "module": "Commands/Update",
+        "sha256": "9090bf4b64926d11387501ef92877570bc576930c6376d23706fc37265eefb66",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Update/UpdateCommand.cs",
+        "module": "Commands/Update",
+        "sha256": "9f18e692ece072e3ecb0436884ad919807a34abc4b7465ae7732280c1854ce85",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Update/UpdateWorker.cs",
+        "module": "Commands/Update",
+        "sha256": "9588642d9acb82d703218af56494d53cc40da72778cfe3b4f8ee181aa15417b4",
+        "types": []
+      },
+      {
         "source": "ObFramework.Cli/Core/CliModule.cs",
         "module": "Core",
-        "sha256": "55309ec8a25e741dc5e0720b1e9e2a2c294bc5097d5d11ef39a28b5c8e227160",
+        "sha256": "2b33a653a6dfd9a189a65151d25c13b7a5768131b3884be94025819df66ac469",
         "types": [
           {
             "name": "ObFramework.Cli.Core.CliModule",
-            "line": 7
+            "line": 8
           }
         ]
       },
@@ -2744,7 +2821,7 @@
       {
         "source": "ObFramework.Cli/Program.cs",
         "module": "",
-        "sha256": "41beb78121244110a61d3f42a2b948b93f38c9fdfc03c967e8805bfc32f0ab51",
+        "sha256": "53dcabba7d87a596737e1d0278e408b4bf226262b0dd9cd06101a3c78eb3ad7c",
         "types": []
       },
       {
@@ -2762,7 +2839,13 @@
       {
         "source": "ObFramework.Cli/Unity/UnityDoctor.cs",
         "module": "Unity",
-        "sha256": "cb69c85d6f9c0aa0e751e8314fe31375bf81c2cc1443b745cb72ba5610e6bb26",
+        "sha256": "eb15085de90d400c434c335831d21eded2450b6547d5b06783898ce3c43fb1ab",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityEditorLocator.cs",
+        "module": "Unity",
+        "sha256": "44eced03321e36f3764ed449a5808dc29605bdfd869c43f406bb7b210cba25e4",
         "types": []
       },
       {
@@ -2780,7 +2863,19 @@
       {
         "source": "ObFramework.Cli/Unity/UnityProject.cs",
         "module": "Unity",
-        "sha256": "244211ed4b0ed91fb15e0ce1105fcc8fe79f5b482ea13863acd90d08bdc99eff",
+        "sha256": "d361c8b762fe98319b219541344b07f831dd87eb3c8533c00f7a1c8d91f4f90c",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityTestScaffold.Templates.cs",
+        "module": "Unity",
+        "sha256": "26e47b461a72a0aae32c1cfc2a61c8d6eae71662f063d5a56f91755e621f2d87",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Unity/UnityTestScaffold.cs",
+        "module": "Unity",
+        "sha256": "98e84fa34070c29492f76c81eeadf2602f68ca58d764e22e62ea6385776aa8aa",
         "types": []
       },
       {

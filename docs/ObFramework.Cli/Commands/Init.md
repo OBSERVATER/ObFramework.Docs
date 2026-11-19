@@ -1,11 +1,11 @@
 # Initialization
 
-`ob init` runs an ordered pipeline: prepare `setup.json`; for Unity, install packages/integration and deploy Editor tools; then install Luban. Initialization is incremental and can be retried after fixing an error. The complete pipeline is not one transaction: earlier configuration/package writes can remain when a later step fails.
+`ob init` runs an ordered pipeline: prepare `setup.json`; for Unity, install packages and integrations, prepare the business test scaffold, and deploy Editor tools; then install Luban. Initialization is incremental and can be retried after fixing an error. The complete pipeline is not one transaction: earlier configuration/package writes can remain when a later step fails.
 
 ## Options
 
 ```text
-ob init [--root <DIR>] [--engine <ENGINE>] [--resources <BACKEND>]
+ob init [--root <DIR>] [--engine <ENGINE>]
         [--package-version <VERSION>] [--source <FEED>]
         [--skip-packages] [--skip-download]
 ```
@@ -14,15 +14,16 @@ ob init [--root <DIR>] [--engine <ENGINE>] [--resources <BACKEND>]
 |---|---|
 | `--root` | Defaults to the current directory; converted to an absolute path. |
 | `--engine` | `auto` by default; accepts `unity`, `godot`, `unreal`, or `unrealsharp`. |
-| `--resources` | Unity only; `custom` or `addressables`. An omitted value preserves a recorded choice; a new project defaults to `custom`. |
 | `--package-version` | Selects matching `ObFramework` and `ObFramework.Adapter.Unity` versions; defaults to the CLI informational version without build metadata. |
 | `--source` | Additional NuGet feed. Relative filesystem paths are resolved against the working directory. |
 | `--skip-packages` | Skips framework NuGet restoration. With Addressables selected, UPM configuration and integration source deployment still run. |
-| `--skip-download` | Skips Luban installation; other steps still run. |
+| `--skip-download` | Skips Luban installation; other steps still run. A network failure during the Luban download also lets initialization continue and records the skip. |
 
 Auto detection looks first for Unity `Assets/` plus `ProjectSettings/`, then `project.godot`, then a `*.uproject`. An unrecognized directory uses the engine-neutral setup/Luban path. Selecting an engine explicitly validates its project marker. Godot/Unreal initialization currently does not install engine adapter packages or deploy their Editor integrations.
 
 ## Unity prerequisites and installed files
+
+For an initialized project, ordinary initialization requires the matching CLI version. Use [ob update](Update.md) to upgrade the project and CLI together.
 
 Use a Unity 2022.3+ project with `ProjectSettings/ProjectVersion.txt`, .NET SDK 8+, and a closed Editor. Initialization checks the Unity lock file and refuses a currently open project. It does not create gameplay scenes or resource catalogs.
 
@@ -36,13 +37,26 @@ The Unity path:
 
 NuGet configuration prefers an existing `Packages/nuget-packages/NuGet.config`, otherwise uses `Assets/NuGet.config`. Existing `PackagesConfigDirectoryPath` and `repositoryPath` settings in the Assets layout are respected. Existing package sources and credentials are retained; `--source` updates the `ObFramework` source entry.
 
+## Test business code with the .NET SDK
+
+Unity initialization creates the business assembly under `Assets/Scripts/Core/` and the .NET
+projects under `Tests/`. The core project compiles those same Unity C# files with the
+engine-independent ObFramework source generator. Keep engine bindings outside this assembly.
+
+From the Unity project root, run the test command printed by `ob init`.
+
+The generated `Tests/ObFramework.Unity.props` uses the same ObFramework version and
+NuGet configuration as Unity. Re-run `ob init`
+to refresh these settings after a package upgrade. Existing source files, project files,
+and tests are preserved. The first test run restores the project dependencies.
+Projects with additional business dependencies should add the corresponding .NET references
+to the core project.
+
 ## Optional Addressables integration
 
-```powershell
-ob init --root "D:/UnityProjects/MyGame" --engine unity --resources addressables
-```
+Unity projects default to the `custom` resource backend. To opt into [Addressables](../../ObFramework.Adapter.Unity/Integrations/Addressables.md), set `modules.installation.resources` in `setup.json` to `addressables` and run `ob init` from the Unity project root.
 
-The default runtime adapter has no Addressables dependency. This option deploys source and an asmdef to `Assets/ObFramework/Integrations/Addressables/`, compiled by the game against its own UPM package. An existing registry version in the supported `1.21.x` range is preserved; an absent selection receives `1.21.21`. An incompatible, Git, or local-path selection fails validation.
+The Addressables integration deploys source and an asmdef to `Assets/ObFramework/Integrations/Addressables/`, compiled by the game against its own UPM package. An existing registry version in the supported `1.21.x` range is preserved; an absent selection receives `1.21.21`. An incompatible, Git, or local-path selection fails validation.
 
 The integration exposes `ObFramework.Adapter.Unity.Resource.AddressablesAssetAdapter`; projects with explicit assembly references may need `ObFramework.Integrations.Addressables`. Custom adapters implement `IAssetAdapter<TNativeHandle>` and optionally `IRawFileAdapter<TNativeHandle>` instead.
 
@@ -52,10 +66,10 @@ The selected backend is recorded at `modules.installation.resources`. Switching 
 
 Setup adds absent `unity` (Unity only), `luban`, and `diagnostics` sections. Existing values and unknown JSON properties are retained. A pre-existing `root` pointing to another directory is an error; use [configuration commands](Config.md) to update an intentionally relocated project.
 
-Luban installation requests the release tagged `v5.1.0` and downloads Luban plus the optional Agent to configured directories. A `.obf-luban-version` marker identifies managed installations. A pre-existing unmarked target directory is rejected. Downloads extract into a temporary sibling directory; replacement uses a backup/rollback step. `--skip-download` records an intentional skip for doctor diagnostics.
+Luban installation downloads the pinned official `v5.1.0/Luban.7z` and optional `v5.1.0/Luban.Agent.7z` assets directly from `https://github.com/focus-creative-games/luban/releases/download/` to configured directories. It does not query the GitHub REST API, so API quota exhaustion does not block access to otherwise available release files. A `.obf-luban-version` marker identifies managed installations. A pre-existing unmarked target directory is rejected. Downloads extract into a temporary sibling directory; replacement uses a backup/rollback step. If an asset download fails, init prints a warning, records the skip and completes the other steps. Retry `ob init` when network access is available. `--skip-download` records an intentional skip for doctor diagnostics.
 
 ## Verify and recover
 
 Successful init prints static diagnostics and explicitly leaves Unity compilation/runtime unverified. Follow with [doctor](../Unity/Doctor.md), then exercise your bootstrap scene. A required Editor payload conflict fails before that deployment writes its planned files, but prior pipeline steps may already have changed the project. Preserve/move the conflicting file, repair the reported package/feed/configuration issue, and rerun init.
 
-Sources: `ObFramework.Cli/Commands/Init/InitCommand.cs`, `ObFramework.Cli/Commands/Init/InitCliModule.cs`, `ObFramework.Cli/Unity/UnityPackageInstaller.cs`, `ObFramework.Cli/Unity/UnityIntegrationInstaller.cs`, [Luban installer](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Commands/Init/LubanReleaseInstaller.cs).
+Sources: `ObFramework.Cli/Commands/Init/InitCommand.cs`, `ObFramework.Cli/Commands/Init/InitCliModule.cs`, `ObFramework.Cli/Unity/UnityPackageInstaller.cs`, `ObFramework.Cli/Unity/UnityIntegrationInstaller.cs`, `ObFramework.Cli/Commands/Init/LubanReleaseInstaller.cs`.

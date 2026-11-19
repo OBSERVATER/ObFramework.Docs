@@ -8,7 +8,7 @@
 
 ### ObFramework.Cli.Core.CliModule
 
-Declared at `ObFramework.Cli/Core/CliModule.cs:7` (source checkout).
+Declared at `ObFramework.Cli/Core/CliModule.cs:8` (source checkout).
 
 ```csharp
 public sealed class CliModule

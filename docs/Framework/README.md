@@ -21,6 +21,7 @@ The engine-independent runtime lives in `Framework/` and targets .NET Standard 2
 | Configuration catalogs and Luban tables | [Config](Integrated/Config.md) | `ConfigPlugin` |
 | Save targets, slots and migration | [Save](Integrated/Save.md) | `SavePlugin` |
 | Logic ticks and frame callbacks | [Clock](Integrated/Clock.md) | `ClockPlugin` |
+| Random selection, weights and shuffling | [Random](Integrated/Random.md) | `RandomPlugin` |
 | Contextual logging | [Diagnostics](Integrated/Diagnostics.md) | `DiagnosticsPlugin` |
 | Reusable lists, dictionaries and custom objects | [Pooling](Integrated/Pooling.md) | `ListPool<T>.Pool`, `DictionaryPool<TKey,TValue>.Pool` |
 

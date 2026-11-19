@@ -22,7 +22,7 @@ ob doctor --root "D:/UnityProjects/MyGame" --unity --unity-editor "D:/Unity/Edit
 | `OBD040` | Owned Editor payload files/checksums, required current files, and generator `RoslynAnalyzer` labels. |
 | `OBD050` | Duplicate framework/provider DLLs and Unity engine DLLs bundled into the NuGet repository. |
 | `OBD060` | The selected optional Addressables version and integration source/asmdef. |
-| `OBD070` | Configured Luban tool files; missing tools become a warning when initialization explicitly recorded a skipped download. |
+| `OBD070` | Configured Luban tool files; missing tools become a warning when initialization recorded a skipped download, including a network failure. |
 | `OBD900` | Actual Unity import and compilation; pending unless requested and executed successfully. |
 
 Statuses are `pass`, `fail`, `warning`, and `pending`. The exit code is `0` when no check failed, even with warnings or a pending Unity check. Treat `OBD900=pass` as the requirement when automation needs evidence of engine compilation.

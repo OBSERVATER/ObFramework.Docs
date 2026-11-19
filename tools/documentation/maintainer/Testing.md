@@ -64,3 +64,21 @@ Place the test under the production project's corresponding folder, then the rel
 Run the relevant filter first, then the complete managed suite when shared runtime/generator contracts changed. Record which commands actually passed and any engine acceptance still outstanding. See the [documentation home](../../../docs/README.md) for project guides.
 
 The [standalone documentation example](../../../examples/Documentation/README.md) consumes a chosen NuGet package version. Testing source remains with the implementation in the main repository.
+## Luban download regression and live smoke test
+
+`ObFramework.Test/Cli/LubanDownloadTest.cs` exercises the real installer and init step through an injected HTTP transport. Its default tests cover successful ZIP extraction for Luban and Agent, current-version reuse, API quota independence, HTTP 403 at main and Agent asset downloads, preservation of an old installation, temporary-file cleanup, a successful retry after a failed asset download, init warning/skip recording, explicit download skipping, and caller cancellation. These tests use fixed responses and require no network access. Small ZIP fixture payloads exercise transport, extraction and replacement behavior; the explicit live test covers the actual official 7z archives.
+
+```powershell
+dotnet test ObFramework.Test/ObFramework.Test.csproj --no-restore --filter "FullyQualifiedName~LubanDownloadTest&TestCategory!=Network"
+```
+
+The separate `LiveGitHubReleaseDownloadsUsableMainAndAgentAssemblies` test is marked `Explicit` and `Network`. It uses the default network transport, downloads both pinned official 7z release files without querying the REST API, and extracts both packages, and checks that the resulting DLLs contain managed PE metadata and current version markers. It logs the request stage, HTTP status and selected rate-limit headers without printing credentials or signed redirect queries. A network failure fails this test; it is not converted to a successful skip.
+
+Run it deliberately from the source root after building the test project:
+
+```powershell
+dotnet test ObFramework.Test/ObFramework.Test.csproj --no-build --no-restore --filter "FullyQualifiedName=ObFramework.Test.Cli.LubanDownloadTest.LiveGitHubReleaseDownloadsUsableMainAndAgentAssemblies" --logger "console;verbosity=normal"
+```
+
+Observed on 2026-11-19: all eight offline cases passed. The live test failed on `GET https://api.github.com/repos/focus-creative-games/luban/releases/tags/v5.1.0` with HTTP 403 (`rate limit exceeded`), `X-RateLimit-Remaining: 0`, and `X-RateLimit-Resource: core`. No release asset request occurred. This establishes API rate limiting for that run; it does not establish successful native archive extraction or prove that every earlier 403 had the same cause. That initial test-only change did not fix the API dependency.
+Follow-up on 2026-11-19: a new regression reproduced the defect with an exhausted API quota and available official file URLs. The installer now downloads the two known assets directly. All nine offline cases passed, and the live test passed: both official archive requests returned HTTP 200; extraction, managed PE metadata and version markers were verified for Luban and Agent. The initial API rate-limit failure was therefore an avoidable dependency in the download flow, not evidence that the release files were unavailable.

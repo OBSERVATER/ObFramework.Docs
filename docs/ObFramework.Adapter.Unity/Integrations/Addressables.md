@@ -4,11 +4,19 @@ The base `ObFramework.Adapter.Unity` assembly excludes provider integrations. Th
 
 ## Install and compose
 
-On initial installation, with Unity closed:
+Before initialization, set `modules.installation.resources` to `addressables` in the Unity project's `setup.json`. Merge the setting into an existing file, or use this as the initial file.
 
-```powershell
-ob init --engine unity --root "D:/UnityProjects/MyGame" --resources addressables
+```json
+{
+  "modules": {
+    "installation": {
+      "resources": "addressables"
+    }
+  }
+}
 ```
+
+Close Unity and run `ob init` from the project root.
 
 The CLI preserves a compatible registry-based 1.21.x selection, installs 1.21.21 when absent, and rejects incompatible/non-registry selections. Source and a dedicated asmdef are deployed under `Assets/ObFramework/Integrations/Addressables`. Assemblies with explicit reference lists that use the adapter type need a reference to `ObFramework.Integrations.Addressables`.
 
@@ -33,7 +41,7 @@ Raw-file loading uses a `TextAsset`, returns its `bytes` without transferring an
 
 ## Changing providers
 
-Omitting `--resources` preserves the provider already recorded by init. Switching a recorded provider requires explicitly preserving/removing its previous integration and updating `modules.installation.resources` in `setup.json` before reinitializing. Keep customized adapters separate from CLI-owned source; the installer does not silently delete customizations.
+The recorded provider is used on subsequent initialization and upgrades. To switch providers, preserve any customizations, remove the previous integration as needed, and update `modules.installation.resources` in `setup.json` before reinitializing.
 
 ## Verify
 

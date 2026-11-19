@@ -12,5 +12,6 @@ Public and protected declarations (including implicit interface members and enum
 - [EditorDeploy/Core](EditorDeploy/Core.md)
 - [Extension](Extension.md)
 - [Integrations/Addressables](Integrations/Addressables.md)
+- [Random](Random.md)
 - [UI](UI.md)
 - [ViewBinding](ViewBinding.md)

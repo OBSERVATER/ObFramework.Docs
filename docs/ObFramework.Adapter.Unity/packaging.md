@@ -26,6 +26,6 @@ ob init --engine unity --root "D:/UnityProjects/MyGame" --source "D:/LocalFeed" 
 ob doctor --root "D:/UnityProjects/MyGame" --json
 ```
 
-Close Unity during init. Use the chosen matching version rather than assuming the example version exists in a feed. For optional Addressables, pass `--resources addressables`; see [integration](Integrations/Addressables.md). Backend selection, modified deployment files, restore failures and retries follow the [CLI init contract](../ObFramework.Cli/Commands/Init.md).
+Close Unity during init. Use the chosen matching version rather than assuming the example version exists in a feed. For optional Addressables, configure the [integration](Integrations/Addressables.md) in `setup.json`. Backend selection, modified deployment files, restore failures and retries follow the [CLI init contract](../ObFramework.Cli/Commands/Init.md).
 
 Run `ob doctor --root <project> --unity --unity-editor <Unity.exe>` for real import/compilation and verify your application's bootstrap, prefabs and resource catalog in the Editor. Historical checks recorded by earlier notes do not establish that the current worktree or target platform passes. No engine or package-publication acceptance is claimed by the documentation checks.
