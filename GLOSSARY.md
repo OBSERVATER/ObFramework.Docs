@@ -14,3 +14,17 @@ A set of runtime, CLI and Unity adapter packages built from the same source revi
 
 **Release request**
 A maintainer's declaration of the exact version to publish from a specific source revision.
+
+## Unity startup
+
+**Game launcher**
+The component a Unity project places in its startup scene to start an ObFramework application. The launcher template provides the framework startup and leaves game-specific startup to the project.
+
+**Game application**
+The engine-independent application that owns the game's Architecture and application lifecycle, including exit requests and business shutdown.
+
+**Game manager**
+The persistent Unity root GameObject for a game application's native runtime components and shared UI hierarchy.
+
+**UI root prefab**
+The project asset that defines the shared UI hierarchy instantiated at application startup.

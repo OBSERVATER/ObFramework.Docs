@@ -23,7 +23,7 @@ ob init --engine unity --root "D:/UnityProjects/MyGame"
 ob doctor --root "D:/UnityProjects/MyGame" --json
 ```
 
-For a private/local feed, use the matching CLI installation source and pass `--source <feed>` and, when necessary, `--package-version <version>` to init. See [CLI documentation](../ObFramework.Cli/README.md) for package selection and deployment behavior. Init installs packages, analyzers and Editor tools; you still create the launcher, scene, UI prefabs and resource content.
+For a private/local feed, use the matching CLI installation source and pass `--source <feed>` and, when necessary, `--package-version <version>` to init. Init installs packages, analyzers and Editor tools and creates an editable launcher and UI root prefab. Attach the generated `GameLauncher` to your startup scene and add your game content. See the [startup guide](Core/README.md) and [CLI installation details](../ObFramework.Cli/Commands/Init.md).
 
 ## Source build
 

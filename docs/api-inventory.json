@@ -316,11 +316,11 @@
       {
         "source": "Framework/Core/Plugins/PluginApplication.cs",
         "module": "Core/Plugins",
-        "sha256": "429296c470e061cc8bf1ab889f90d42bbe930823c2b31e8269852ee41e295e3c",
+        "sha256": "97e7a4c6566ec1c5e3e50fc68c6408b5d78893e3e5245cc9c421b697e0223a91",
         "types": [
           {
             "name": "ObFramework.Core.PluginApplication",
-            "line": 10
+            "line": 11
           }
         ]
       },
@@ -1618,7 +1618,7 @@
       {
         "source": "ObFramework.Adapter.Unity/Core/AGameLauncher.cs",
         "module": "Core",
-        "sha256": "1e943c0a67b85a1ae5cc997d03dc69aedb7a7f373d25de756aa0b543fd3d4ad5",
+        "sha256": "deb90c193f6e01e1cc83ff700469c383208fce58d8b74b97331835ece18db2ad",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.Core.AGameLauncher",
@@ -1640,11 +1640,11 @@
       {
         "source": "ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs",
         "module": "Core",
-        "sha256": "2b42aba54d88cf345b4b457a90ef640bb16e365457f499070ba12ef0e1a6bfab",
+        "sha256": "a554aca678ecea869e168bfd9111d3d9a66900ddc0cb49a4d96e4afde04fedbf",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.Core.UnityRuntimeHost",
-            "line": 13
+            "line": 14
           }
         ]
       },
@@ -2040,7 +2040,7 @@
       {
         "source": "ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs",
         "module": "ViewBinding",
-        "sha256": "04694ee4117cf0ecf53c1a4ba4ff0fd05aabf89e0869458c69271391530c8a9e",
+        "sha256": "946a998599980e891f5b9f3566f20dd3f397c4709b3ee7b1d5b2f87882b0147b",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.ViewBinding.GeneratedUIBindingRuntime",
@@ -2602,7 +2602,7 @@
       {
         "source": "ObFramework.Cli/Commands/Init/UnityPackagesInitStep.cs",
         "module": "Commands/Init",
-        "sha256": "77509b9417791644c14fb5aee2b4c45523f8196524db88743b46f16dc87894a0",
+        "sha256": "f7a19cc83917458843808b23d542613d86af2f8a38d649ff044fc949e798657d",
         "types": []
       },
       {
@@ -2837,6 +2837,12 @@
         "types": []
       },
       {
+        "source": "ObFramework.Cli/Unity/UnityBootstrapInstaller.cs",
+        "module": "Unity",
+        "sha256": "6650a00ffe9f528277df2e2cb29e9093323893d41a6972953ecfab5ca5563d31",
+        "types": []
+      },
+      {
         "source": "ObFramework.Cli/Unity/UnityDoctor.cs",
         "module": "Unity",
         "sha256": "eb15085de90d400c434c335831d21eded2450b6547d5b06783898ce3c43fb1ab",
@@ -2869,13 +2875,13 @@
       {
         "source": "ObFramework.Cli/Unity/UnityTestScaffold.Templates.cs",
         "module": "Unity",
-        "sha256": "26e47b461a72a0aae32c1cfc2a61c8d6eae71662f063d5a56f91755e621f2d87",
+        "sha256": "ae0287694867a989bc88c55828fb54546571cf8d3511b3226abd2436abe9ba0e",
         "types": []
       },
       {
         "source": "ObFramework.Cli/Unity/UnityTestScaffold.cs",
         "module": "Unity",
-        "sha256": "98e84fa34070c29492f76c81eeadf2602f68ca58d764e22e62ea6385776aa8aa",
+        "sha256": "904f80f99581476209395bdf536de81ab4ab60ad85f85ff7c6d4a692bf1b6c42",
         "types": []
       },
       {

@@ -28,11 +28,11 @@ public interface IPluginContext
 
 ## Core/Plugins/PluginApplication.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/Framework/Core/Plugins/PluginApplication.cs)
+`Framework/Core/Plugins/PluginApplication.cs` (source checkout)
 
 ### ObFramework.Core.PluginApplication
 
-Declared at [line 10](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/Framework/Core/Plugins/PluginApplication.cs#L10).
+Declared at `Framework/Core/Plugins/PluginApplication.cs:11` (source checkout).
 
 ```csharp
 public abstract class PluginApplication
@@ -44,6 +44,7 @@ public abstract class PluginApplication
     protected virtual void ReleaseAdapters();
     public Task StartAsync(IFrameLoopDriver? driver = null);
     public Task RunAsync(Func<CancellationToken, Task> work);
+    public void RequestExit();
     public Task StopAsync();
 ```
 

@@ -1,6 +1,6 @@
 # Initialization
 
-`ob init` runs an ordered pipeline: prepare `setup.json`; for Unity, install packages and integrations, prepare the business test scaffold, and deploy Editor tools; then install Luban. Initialization is incremental and can be retried after fixing an error. The complete pipeline is not one transaction: earlier configuration/package writes can remain when a later step fails.
+`ob init` prepares `setup.json` first. For Unity, it installs packages and integrations, prepares the business test scaffold, creates the launcher and UI root assets, and deploys Editor tools. It installs Luban last. Initialization is incremental and can be retried after fixing an error. Earlier configuration or package writes can remain when a later step fails.
 
 ## Options
 
@@ -36,6 +36,12 @@ The Unity path:
 5. Deploys Editor source and the two Roslyn generators with analyzer `.meta` labels. The CLI package embeds these payloads; separate generator package installation is unnecessary.
 
 NuGet configuration prefers an existing `Packages/nuget-packages/NuGet.config`, otherwise uses `Assets/NuGet.config`. Existing `PackagesConfigDirectoryPath` and `repositoryPath` settings in the Assets layout are respected. Existing package sources and credentials are retained; `--source` updates the `ObFramework` source entry.
+
+## Start from an existing Unity scene
+
+Attach `Assets/Scripts/Unity/GameLauncher.cs` to a GameObject in the startup scene. In Play mode it creates the persistent runtime and loads `Assets/ObFramework/Resources/ObFramework/UIRoot.prefab`. The game owns the generated launcher, prefab, and prefab GUID, so later `ob init` runs preserve those files. The template requires runtime and adapter packages at least as recent as the CLI. See the [Unity startup guide](../../ObFramework.Adapter.Unity/Core/README.md) for plugin registration and game entry.
+
+If your project already has its own or an older `GameApplication` and lacks a launcher, init provides `Assets/Scripts/Unity/GameLauncher.cs.txt`. Adapt the constructor call and plugin configuration to your application, then save it as `GameLauncher.cs` and attach it to the startup scene.
 
 ## Test business code with the .NET SDK
 

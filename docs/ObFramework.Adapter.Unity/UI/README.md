@@ -4,27 +4,19 @@ A window is a pair: an engine-independent `AUIView` holds business state/lifecyc
 
 ## Compose the adapter
 
-The following is an application-composition excerpt. `root` is your scene's initialized `UIRoot`; `ShopView` and `ShopWindow` are the types in the [binding example](../ViewBinding/README.md). Put this plugin construction inside `CreatePlugins()` and include a `ResourcePlugin` matching your provider:
+The following is an application-composition excerpt. `root` is the initialized `UnityRuntimeHost.Current.RuntimeUIRoot`. For a custom launcher, initialize the `UIRoot` before composing the adapter. `ShopView` and `ShopWindow` are the types in the [binding example](../ViewBinding/README.md). Return the UI plugin and a `ResourcePlugin` matching your provider from the concrete `GameLauncher` template's `ConfigurePlugins()` method.
 
 ```csharp
-using System.Threading.Tasks;
 using ObFramework.Adapter.Unity.UI;
 using ObFramework.Integrated.UI;
 
-var uiPlugin = new UIPlugin(
-    resources => new UnityUIAdapter(resources, new UIViewRegistry()),
-    initialize: (adapter, ct) =>
-    {
-        ct.ThrowIfCancellationRequested();
-        root.Init();
-        var unityUi = (UnityUIAdapter)adapter;
-        unityUi.Root = root;
-        unityUi.Register<ShopView, ShopWindow>("UI/ShopView");
-        return Task.CompletedTask;
-    });
+var registry = new UIViewRegistry();
+registry.Register<ShopView, ShopWindow>("UI/ShopView");
+var uiPlugin = new UIPlugin(resources =>
+    new UnityUIAdapter(resources, registry) { Root = root });
 ```
 
-The factory overload declares the UI plugin's dependency on `ResourcePlugin`. When directly supplying an already-created adapter, the caller is responsible for the complete dependency/lifetime composition. The resource key must resolve through your provider; registration does not create an address or preload an asset.
+The factory overload declares the UI plugin's dependency on `ResourcePlugin`. Use the optional `initialize` callback for setup that needs to await work during plugin startup. The resource key must resolve through your provider. When supplying an existing adapter, the caller is responsible for its dependencies and lifetime.
 
 After startup, an Architecture-bound caller can open/close by business View type. This excerpt assumes `architecture` is an initialized `IArchitecture`:
 

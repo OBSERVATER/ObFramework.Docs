@@ -17,11 +17,11 @@ Declared at [line 5](https://github.com/OBSERVATER/ObFramework/blob/5471678c6942
 
 ## ViewBinding/GeneratedUIBindingRuntime.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs)
+`ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs` (source checkout)
 
 ### ObFramework.Adapter.Unity.ViewBinding.GeneratedUIBindingRuntime
 
-Declared at [line 14](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs#L14).
+Declared at `ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs:14` (source checkout).
 
 ```csharp
 public static class GeneratedUIBindingRuntime

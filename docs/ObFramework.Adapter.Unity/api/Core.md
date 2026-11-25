@@ -4,19 +4,19 @@
 
 ## Core/AGameLauncher.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Core/AGameLauncher.cs)
+`ObFramework.Adapter.Unity/Core/AGameLauncher.cs` (source checkout)
 
 ### ObFramework.Adapter.Unity.Core.AGameLauncher
 
-Declared at [line 10](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Core/AGameLauncher.cs#L10).
+Declared at `ObFramework.Adapter.Unity/Core/AGameLauncher.cs:10` (source checkout).
 
 ```csharp
 public abstract class AGameLauncher : AViewController
     protected abstract PluginApplication CreateApplication();
-    protected virtual GameObject? GetGameManager();
-    protected virtual IEnumerable<GameObject> GetPersistentRoots();
+    protected virtual string? UIRootResourceKey { get; };
+    protected virtual Task StartGameAsync(CancellationToken cancellationToken);
     public override IArchitecture GetArchitecture();
-    public Task ShutdownAsync();
+    public abstract Task StartGameAsync();
 ```
 
 ## Core/UnityFrameLoopBridge.cs
@@ -36,16 +36,17 @@ public sealed class UnityFrameLoopBridge : IApplicationFrameLoopDriver
 
 ## Core/UnityRuntimeHost.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs)
+`ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs` (source checkout)
 
 ### ObFramework.Adapter.Unity.Core.UnityRuntimeHost
 
-Declared at [line 13](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs#L13).
+Declared at `ObFramework.Adapter.Unity/Core/UnityRuntimeHost.cs:14` (source checkout).
 
 ```csharp
 [DisallowMultipleComponent] public sealed class UnityRuntimeHost : MonoBehaviour
     public static UnityRuntimeHost? Current { get; private set; }
     public PluginApplication? Application { get; private set; }
+    public UIRoot? RuntimeUIRoot { get; private set; }
     public async Task ShutdownAsync();
 ```
 
