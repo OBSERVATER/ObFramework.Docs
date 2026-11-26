@@ -35,6 +35,8 @@ Include `resources` with the other plugins, and create `UnityUIAdapter` from tha
 
 `ReadAsync<T>` supports Unity object types, starts `Addressables.LoadAssetAsync<T>`, checks cancellation before loading and after completion, and transfers the successful native handle to the resource manager. A failure/cancellation before transfer releases the native handle in the adapter's `finally`. Successful loads are released by the framework's last business-handle disposal.
 
+Both async paths resolve the key for the requested type first (`TextAsset` for raw files). Catch `KeyNotFoundException` to skip an optional asset when the catalog contains no matching location. This includes keys registered only for other types. A failed lookup or load reports an error even for optional assets.
+
 Synchronous `Read<T>` throws `NotSupportedException`; use asynchronous loads. The underlying Addressables operation is awaited to completion, so cancellation does not promise immediate termination of that engine operation. Framework callers sharing a resource entry also share its underlying load.
 
 Raw-file loading uses a `TextAsset`, returns its `bytes` without transferring an Addressables handle, and releases the temporary `TextAsset` handle in `finally`. String decoding is handled by the engine-independent resource layer. Do not mutate a shared byte array returned from a cached raw-file entry.
