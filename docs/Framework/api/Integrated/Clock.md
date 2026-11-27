@@ -13,6 +13,7 @@ Declared at `Framework/Integrated/Clock/ClockPlugin.cs:9` (source checkout).
 ```csharp
 public class ClockPlugin : IPlugin
     public int Tick { get; private set; }
+    public double Time { get; };
     public float TickInterval { get; }
     public ClockPlugin(float interval);
     public Task StopAsync(IPluginContext plugins);

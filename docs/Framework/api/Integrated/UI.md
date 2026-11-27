@@ -62,11 +62,11 @@ public enum EUIOpenMode
 
 ## Integrated/UI/IUIAdapter.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/Framework/Integrated/UI/IUIAdapter.cs)
+`Framework/Integrated/UI/IUIAdapter.cs` (source checkout)
 
 ### ObFramework.Integrated.UI.IUIAdapter
 
-Declared at [line 13](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/Framework/Integrated/UI/IUIAdapter.cs#L13).
+Declared at `Framework/Integrated/UI/IUIAdapter.cs:12` (source checkout).
 
 ```csharp
 public interface IUIAdapter

@@ -44,3 +44,5 @@ new GASPlugin(loadConfig: true, attributes: CombatAttributes.All);
 ```
 
 Give the caster a Mana attribute and the target a Health attribute. Grant and activate ability 2001. With the supplied values the caster spends 10 Mana and the target loses 20 Health. Ability 2002 applies regeneration for 6 ticks. The generated catalog describes the two GAS runtime configuration types; projects with a custom catalog can use its entries when building their own configuration mapping.
+
+See [Cast the starter attack](../../Framework/Integrated/GAS.md#cast-the-starter-attack) for actor setup, activation and cleanup.

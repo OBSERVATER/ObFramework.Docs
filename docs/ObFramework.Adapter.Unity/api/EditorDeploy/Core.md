@@ -165,11 +165,11 @@ public static class EditorFrameworkNames
 
 ## EditorDeploy/Core/EditorGenerationRequest.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs)
+`ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs` (source checkout)
 
 ### ObFramework.Editor.Core.EditorGenerationRequest
 
-Declared at [line 13](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs#L13).
+Declared at `ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs:12` (source checkout).
 
 ```csharp
 public sealed class EditorGenerationRequest

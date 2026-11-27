@@ -2,19 +2,6 @@
 
 [API index](README.md)
 
-## ViewBinding/BindViewAttribute.cs
-
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/BindViewAttribute.cs)
-
-### ObFramework.Adapter.Unity.ViewBinding.BindViewAttribute
-
-Declared at [line 5](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/BindViewAttribute.cs#L5).
-
-```csharp
-[AttributeUsage(AttributeTargets.Class, Inherited = false)] public sealed class BindViewAttribute : Attribute
-    public BindViewAttribute(Type viewType, Type contractType);
-```
-
 ## ViewBinding/GeneratedUIBindingRuntime.cs
 
 `ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs` (source checkout)
@@ -32,21 +19,11 @@ public static class GeneratedUIBindingRuntime
 
 ## ViewBinding/GeneratedViewBinding.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs)
-
-### ObFramework.Adapter.Unity.ViewBinding.IGeneratedViewBinding
-
-Declared at [line 8](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs#L8).
-
-```csharp
-[EditorBrowsable(EditorBrowsableState.Never)] public interface IGeneratedViewBinding
-    Type ControllerType { get; }
-    object CreateView(IArchitecture architecture);
-```
+`ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs` (source checkout)
 
 ### ObFramework.Adapter.Unity.ViewBinding.GeneratedViewBinding
 
-Declared at [line 15](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs#L15).
+Declared at `ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs:6` (source checkout).
 
 ```csharp
 [EditorBrowsable(EditorBrowsableState.Never)] public static class GeneratedViewBinding

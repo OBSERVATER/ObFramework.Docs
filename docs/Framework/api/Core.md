@@ -64,7 +64,7 @@ public interface IAdapter<out TResult, in TRequest, in TValue> : IReadAdapter<TR
 
 ### ObFramework.Core.IArchitecture
 
-Declared at `Framework/Core/IArchitecture.cs:13` (source checkout).
+Declared at `Framework/Core/IArchitecture.cs:12` (source checkout).
 
 ```csharp
 public interface IArchitecture
@@ -91,7 +91,7 @@ public interface IArchitecture
 
 ### ObFramework.Core.AArchitecture<T>
 
-Declared at `Framework/Core/IArchitecture.cs:38` (source checkout).
+Declared at `Framework/Core/IArchitecture.cs:37` (source checkout).
 
 ```csharp
 public abstract class AArchitecture<T> : IArchitecture, IModelSource where T : AArchitecture<T>, new()

@@ -4,34 +4,32 @@
 
 ## UI/AUIWindow.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/UI/AUIWindow.cs)
+`ObFramework.Adapter.Godot/UI/AUIWindow.cs` (source checkout)
 
 ### ObFramework.Adapter.Godot.UI.AUIWindow
 
-Declared at [line 14](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/UI/AUIWindow.cs#L14).
+Declared at `ObFramework.Adapter.Godot/UI/AUIWindow.cs:7` (source checkout).
 
 ```csharp
-public abstract class AUIWindow : Control, IUIWindow
+public abstract partial class AUIWindow : Control, IUIWindow
     public abstract IArchitecture GetArchitecture();
     public abstract EUILevel Level { get; }
 ```
 
 ## UI/GodotUIAdapter.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs)
+`ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs` (source checkout)
 
 ### ObFramework.Adapter.Godot.UI.GodotUIAdapter
 
-Declared at [line 39](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs#L39).
+Declared at `ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs:13` (source checkout).
 
 ```csharp
-public class GodotUIAdapter : IUIAdapter
+public sealed class GodotUIAdapter : IUIAdapter
     public UIRoot? Root { get; set; }
-    public IArchitecture? Architecture { get; set; }
-    public UIViewRegistry Registry { get; };
-    public GodotUIAdapter(ResourcePlugin assets, IArchitecture? architecture = null);
-    public void Register<TView, TWindow>(string resourceKey, Func<IArchitecture, TView> factory) where TView : AUIView where TWindow : class, IUIWindow;
-    public void Register(Type viewType, Type windowType, string resourceKey, Func<IArchitecture, AUIView> factory);
+    public UIViewRegistry Registry { get; }
+    public GodotUIAdapter(ResourcePlugin assets, UIViewRegistry registry);
+    public void Register<TView, TWindow>(string resourceKey) where TView : AUIView where TWindow : AUIWindow;
     public async Task<UIViewInstance?> CreateAsync(Type viewType, CancellationToken ct = default);
     public void Open(UIViewInstance instance, IUIData? data = null);
     public void Close(UIViewInstance instance);

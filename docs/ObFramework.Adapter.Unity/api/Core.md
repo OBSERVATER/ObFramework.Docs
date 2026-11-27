@@ -14,9 +14,8 @@ Declared at `ObFramework.Adapter.Unity/Core/AGameLauncher.cs:10` (source checkou
 public abstract class AGameLauncher : AViewController
     protected abstract PluginApplication CreateApplication();
     protected virtual string? UIRootResourceKey { get; };
-    protected virtual Task StartGameAsync(CancellationToken cancellationToken);
+    public abstract Task StartGameAsync(CancellationToken cancellationToken = default);
     public override IArchitecture GetArchitecture();
-    public abstract Task StartGameAsync();
 ```
 
 ## Core/UnityFrameLoopBridge.cs
@@ -32,6 +31,18 @@ public sealed class UnityFrameLoopBridge : IApplicationFrameLoopDriver
     public UnityFrameLoopBridge();
     public void Bind(ClockPlugin clock);
     public void Unbind();
+```
+
+## Core/UnityInitSupport.cs
+
+`ObFramework.Adapter.Unity/Core/UnityInitSupport.cs` (source checkout)
+
+### System.Runtime.CompilerServices.IsExternalInit
+
+Declared at `ObFramework.Adapter.Unity/Core/UnityInitSupport.cs:4` (source checkout).
+
+```csharp
+public static class IsExternalInit
 ```
 
 ## Core/UnityRuntimeHost.cs

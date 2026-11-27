@@ -2,6 +2,19 @@
 
 [API index](../../README.md)
 
+## Commands/Config/Modules/GodotSetupConfig.cs
+
+`ObFramework.Cli/Commands/Config/Modules/GodotSetupConfig.cs` (source checkout)
+
+### ObFramework.Cli.Commands.Config.Modules.GodotSetupConfig
+
+Declared at `ObFramework.Cli/Commands/Config/Modules/GodotSetupConfig.cs:3` (source checkout).
+
+```csharp
+public sealed class GodotSetupConfig
+    [SetupPath(Description = "Generated Godot window and registry source directory")] public string ScriptOutputRoot { get; set; };
+```
+
 ## Commands/Config/Modules/LubanSetupConfig.cs
 
 `ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs` (source checkout)

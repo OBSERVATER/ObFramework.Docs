@@ -4,11 +4,11 @@
 
 ## Extension/CoreExtension.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Extension/CoreExtension.cs)
+`ObFramework.Adapter.Unity/Extension/CoreExtension.cs` (source checkout)
 
 ### ObFramework.Adapter.Unity.Extension.CoreExtension
 
-Declared at [line 7](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Unity/Extension/CoreExtension.cs#L7).
+Declared at `ObFramework.Adapter.Unity/Extension/CoreExtension.cs:6` (source checkout).
 
 ```csharp
 public static class CoreExtension

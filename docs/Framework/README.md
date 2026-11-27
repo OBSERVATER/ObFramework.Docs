@@ -20,6 +20,7 @@ The engine-independent runtime lives in `Framework/` and targets .NET Standard 2
 | Views, native windows, caching and commands | [UI](Integrated/UI.md) | `UIPlugin` |
 | Configuration catalogs and Luban tables | [Config](Integrated/Config.md) | `ConfigPlugin` |
 | Save targets, slots and migration | [Save](Integrated/Save.md) | `SavePlugin` |
+| Combat attributes, effects and abilities | [Gameplay Ability System](Integrated/GAS.md) | `GASPlugin`, `AbilitySystem` |
 | Logic ticks and frame callbacks | [Clock](Integrated/Clock.md) | `ClockPlugin` |
 | Random selection, weights and shuffling | [Random](Integrated/Random.md) | `RandomPlugin` |
 | Contextual logging | [Diagnostics](Integrated/Diagnostics.md) | `DiagnosticsPlugin` |

@@ -34,11 +34,11 @@ public abstract partial class AViewController : Node, IController
 
 ## Core/GodotFrameLoopBridge.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs)
+`ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs` (source checkout)
 
 ### ObFramework.Adapter.Godot.Core.GodotFrameLoopBridge
 
-Declared at [line 7](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs#L7).
+Declared at `ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs:8` (source checkout).
 
 ```csharp
 public sealed partial class GodotFrameLoopBridge : Node, IFrameLoopDriver
@@ -66,11 +66,11 @@ public sealed partial class GodotLateFrameLoopNode : Node
 
 ## Core/GodotRuntimeHost.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs)
+`ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs` (source checkout)
 
 ### ObFramework.Adapter.Godot.Core.GodotRuntimeHost
 
-Declared at [line 10](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs#L10).
+Declared at `ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs:11` (source checkout).
 
 ```csharp
 public partial class GodotRuntimeHost : Node, IApplicationFrameLoopDriver

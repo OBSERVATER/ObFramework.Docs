@@ -4,11 +4,11 @@
 
 ## Deployment/DeployableFileSource.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeployableFileSource.cs)
+`ObFramework.Cli/Deployment/DeployableFileSource.cs` (source checkout)
 
 ### ObFramework.Cli.Deployment.IDeployableFileSource
 
-Declared at [line 13](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeployableFileSource.cs#L13).
+Declared at `ObFramework.Cli/Deployment/DeployableFileSource.cs:9` (source checkout).
 
 ```csharp
 public interface IDeployableFileSource
@@ -19,7 +19,7 @@ public interface IDeployableFileSource
 
 ### ObFramework.Cli.Deployment.EmbeddedDeployableFileSource
 
-Declared at [line 36](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeployableFileSource.cs#L36).
+Declared at `ObFramework.Cli/Deployment/DeployableFileSource.cs:32` (source checkout).
 
 ```csharp
 public sealed class EmbeddedDeployableFileSource : IDeployableFileSource
@@ -33,7 +33,7 @@ public sealed class EmbeddedDeployableFileSource : IDeployableFileSource
 
 ### ObFramework.Cli.Deployment.DirectoryDeployableFileSource
 
-Declared at [line 114](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeployableFileSource.cs#L114).
+Declared at `ObFramework.Cli/Deployment/DeployableFileSource.cs:109` (source checkout).
 
 ```csharp
 public sealed class DirectoryDeployableFileSource : IDeployableFileSource
@@ -46,11 +46,11 @@ public sealed class DirectoryDeployableFileSource : IDeployableFileSource
 
 ## Deployment/DeploymentException.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentException.cs)
+`ObFramework.Cli/Deployment/DeploymentException.cs` (source checkout)
 
 ### ObFramework.Cli.Deployment.DeploymentException
 
-Declared at [line 9](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentException.cs#L9).
+Declared at `ObFramework.Cli/Deployment/DeploymentException.cs:7` (source checkout).
 
 ```csharp
 public sealed class DeploymentException : Exception
@@ -105,11 +105,11 @@ public sealed class DeployableFile
 
 ## Deployment/DeploymentResult.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentResult.cs)
+`ObFramework.Cli/Deployment/DeploymentResult.cs` (source checkout)
 
 ### ObFramework.Cli.Deployment.DeploymentChangeKind
 
-Declared at [line 8](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentResult.cs#L8).
+Declared at `ObFramework.Cli/Deployment/DeploymentResult.cs:4` (source checkout).
 
 ```csharp
 public enum DeploymentChangeKind
@@ -123,7 +123,7 @@ public enum DeploymentChangeKind
 
 ### ObFramework.Cli.Deployment.DeploymentFileChange
 
-Declared at [line 30](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentResult.cs#L30).
+Declared at `ObFramework.Cli/Deployment/DeploymentResult.cs:26` (source checkout).
 
 ```csharp
 public sealed class DeploymentFileChange
@@ -135,7 +135,7 @@ public sealed class DeploymentFileChange
 
 ### ObFramework.Cli.Deployment.DeploymentOptions
 
-Declared at [line 50](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentResult.cs#L50).
+Declared at `ObFramework.Cli/Deployment/DeploymentResult.cs:46` (source checkout).
 
 ```csharp
 public sealed class DeploymentOptions
@@ -144,7 +144,7 @@ public sealed class DeploymentOptions
 
 ### ObFramework.Cli.Deployment.DeploymentResult
 
-Declared at [line 57](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/DeploymentResult.cs#L57).
+Declared at `ObFramework.Cli/Deployment/DeploymentResult.cs:53` (source checkout).
 
 ```csharp
 public sealed class DeploymentResult
@@ -165,11 +165,11 @@ public sealed class DeploymentResult
 
 ## Deployment/OwnedDeploymentManifest.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs)
+`ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs` (source checkout)
 
 ### ObFramework.Cli.Deployment.OwnedDeploymentManifest
 
-Declared at [line 22](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs#L22).
+Declared at `ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs:18` (source checkout).
 
 ```csharp
 public sealed class OwnedDeploymentManifest
@@ -185,7 +185,7 @@ public sealed class OwnedDeploymentManifest
 
 ### ObFramework.Cli.Deployment.OwnedDeploymentFile
 
-Declared at [line 128](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs#L128).
+Declared at `ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs:124` (source checkout).
 
 ```csharp
 public sealed class OwnedDeploymentFile
@@ -198,11 +198,11 @@ public sealed class OwnedDeploymentFile
 
 ## Deployment/UnityDeployCliModule.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/UnityDeployCliModule.cs)
+`ObFramework.Cli/Deployment/UnityDeployCliModule.cs` (source checkout)
 
 ### ObFramework.Cli.Deployment.UnityDeployCliModule
 
-Declared at [line 12](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Deployment/UnityDeployCliModule.cs#L12).
+Declared at `ObFramework.Cli/Deployment/UnityDeployCliModule.cs:11` (source checkout).
 
 ```csharp
 public static class UnityDeployCliModule
@@ -216,7 +216,7 @@ public static class UnityDeployCliModule
 
 ### ObFramework.Cli.Deployment.UnityEditorDeployer
 
-Declared at `ObFramework.Cli/Deployment/UnityEditorDeployer.cs:28` (source checkout).
+Declared at `ObFramework.Cli/Deployment/UnityEditorDeployer.cs:23` (source checkout).
 
 ```csharp
 public sealed class UnityEditorDeployer

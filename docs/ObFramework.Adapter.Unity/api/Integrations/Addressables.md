@@ -8,7 +8,7 @@
 
 ### ObFramework.Adapter.Unity.Resource.AddressablesAssetAdapter
 
-Declared at `ObFramework.Adapter.Unity/Integrations/Addressables/AddressablesAssetAdapter.cs:11` (source checkout).
+Declared at `ObFramework.Adapter.Unity/Integrations/Addressables/AddressablesAssetAdapter.cs:12` (source checkout).
 
 ```csharp
 public sealed class AddressablesAssetAdapter : IAssetAdapter<AsyncOperationHandle>, IRawFileAdapter<AsyncOperationHandle>

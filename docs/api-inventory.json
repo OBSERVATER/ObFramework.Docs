@@ -95,15 +95,15 @@
       {
         "source": "Framework/Core/IArchitecture.cs",
         "module": "Core",
-        "sha256": "c522aa9a8087a094014b2d0f8fd2dba24c6cfd91827fdb34210c752745ab7062",
+        "sha256": "407e6b5315b7fdb10784db7cabb0dce8c2371bd5b32a6bab35da4ce787409882",
         "types": [
           {
             "name": "ObFramework.Core.IArchitecture",
-            "line": 13
+            "line": 12
           },
           {
             "name": "ObFramework.Core.AArchitecture\u003CT\u003E",
-            "line": 38
+            "line": 37
           }
         ]
       },
@@ -377,22 +377,33 @@
       {
         "source": "Framework/Extension/Integrated/ClockExtension.cs",
         "module": "Extension/Integrated",
-        "sha256": "916e34efdc7a574375b889c4aebeb4111f5799be330056704a1782c20a8b0d90",
+        "sha256": "1a55c2fb48546490acead72ac03731bf8834b412ce22b56d1945b4e2e33bfb25",
         "types": [
           {
             "name": "ObFramework.Extension.Integrated.ClockExtension",
-            "line": 6
+            "line": 7
           }
         ]
       },
       {
         "source": "Framework/Extension/Integrated/DiagnosticsExtension.cs",
         "module": "Extension/Integrated",
-        "sha256": "bfe4542d6e0cdd8388c9847017384248ea1c90ff170d49ca41ac887657378a99",
+        "sha256": "453c73bc8008cce09b4ddfe0804f26a2b3acf30a623c87b6037c6295e89f1c45",
         "types": [
           {
             "name": "ObFramework.Extension.Integrated.DiagnosticsExtension",
-            "line": 6
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Extension/Integrated/GASExtension.cs",
+        "module": "Extension/Integrated",
+        "sha256": "6e558885ddbde03d2e51a5ccb2011831026e490804a1b77bffc8a2617012d7bb",
+        "types": [
+          {
+            "name": "ObFramework.Extension.Integrated.GASExtension",
+            "line": 11
           }
         ]
       },
@@ -427,7 +438,7 @@
       {
         "source": "Framework/Integrated/Clock/ClockPlugin.cs",
         "module": "Integrated/Clock",
-        "sha256": "2e4b7d9841364940eb3ac333726bd8c7ab5c67eac403199e753d7ec5edfb0f5a",
+        "sha256": "a21fe531c5c66f4b0578fe3a8042b08b57845577148d818716ff88e4d6dc3324",
         "types": [
           {
             "name": "ObFramework.Integrated.Clock.ClockPlugin",
@@ -581,6 +592,477 @@
           {
             "name": "ObFramework.Integrated.Diagnostics.DiagnosticsPlugin",
             "line": 11
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/AbilitySystem.cs",
+        "module": "Integrated/GAS",
+        "sha256": "cd0133a4b61f072b0bb0347e5e1ace9e1755337ab52f0cba6069e892fab1f744",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.AbilitySystem",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/Attribute.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "63af25b80e469a3cb04b5a008b204f3283b59ea52b63b2a4c248c6a377b5e67f",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.IAttribute\u003CT\u003E",
+            "line": 6
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.Attribute\u003CTFormula, TValue\u003E",
+            "line": 23
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/AttributeKey.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "b80d58eeec5c6c9711ca4f788b70d85a1b93fc9b23bfbddcd8111565baccf860",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.AAttributeKey",
+            "line": 3
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.AttributeKey\u003CT\u003E",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/AttributeSet.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "81dbc8d0046bc99c51ab431ba13b73247030fae9f4f42c67a4e7ba7b4c6bfa8a",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.AttributeSet",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/FormulaDouble.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "405900ae00d2eb0e4e78322b74f95cd0baa9880b6cad3e61b735ead1515db8d8",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.FormulaDouble",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/FormulaFloat.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "7a7641af97333aeded7ac3e586ee0c7a206d15b680d7a76448499042ac329f4f",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Core.FormulaFloat",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Core/Instruction.cs",
+        "module": "Integrated/GAS/Attributes/Core",
+        "sha256": "0035b0b0a4324ed52dfab19f3cf3d932ea04dcf3b0eae4923ee0e5e318b703f0",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Creational/FormulaBuilderData.cs",
+        "module": "Integrated/GAS/Attributes/Creational",
+        "sha256": "728c27b38f19a65df56a5578ff3fbf6b4e1b2791df30a2aea356e2d228a2ce4e",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Creational/FormulaBuilderDouble.cs",
+        "module": "Integrated/GAS/Attributes/Creational",
+        "sha256": "a7aa9b1699429ff2f09521890108bb98c5ae09d8921008cbc11d101cd48a4b1e",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.FormulaBuilderDouble",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Creational/FormulaBuilderFloat.cs",
+        "module": "Integrated/GAS/Attributes/Creational",
+        "sha256": "b93c794db86ada7296dfa2013c4320b9416cf9dc7e4aef5c395f0d718fdf9b31",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.FormulaBuilderFloat",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Creational/FormulaPresets.cs",
+        "module": "Integrated/GAS/Attributes/Creational",
+        "sha256": "69d1b337c0cd90f2bbd983a70af1112a354d8ead0f55bb4c92036760a6cb7d17",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.FormulaPresets",
+            "line": 5
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.FormulaPresets.Float",
+            "line": 7
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.FormulaPresets.Double",
+            "line": 50
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Creational/Formulas.cs",
+        "module": "Integrated/GAS/Attributes/Creational",
+        "sha256": "3feec53454c44572a16b6cc1da05daec879c0d73dedf93f262d480bd7d645722",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.Creational.Formulas",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Attributes/Gameplay.Attributes.Contract.cs",
+        "module": "Integrated/GAS/Attributes",
+        "sha256": "5725259b9cbc375a37cc871b8f40d5c57ab38a92f6362332c6a12253ed3ce7ff",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.OpCode",
+            "line": 8
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Attributes.IFormula\u003CT\u003E",
+            "line": 36
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Config/AbilityConfig.cs",
+        "module": "Integrated/GAS/Config",
+        "sha256": "4ab3b5a89b071764ae2db022c751d28b2094a7744b24efc4a8dbf353a8d7ff42",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Config.AbilityConfig",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Config/EffectConfig.cs",
+        "module": "Integrated/GAS/Config",
+        "sha256": "6ac0aafc4d70993a974801a9ca22198e6c0a88ae80db9ba8bf58f1bf74a847df",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Config.EffectConfig",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/Config/GASConfigLibrary.cs",
+        "module": "Integrated/GAS/Config",
+        "sha256": "441e59ddb7935d0fa57c5e0fa5b2318aba50290547dad37ba0cae0735012c30f",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.Config.GASConfigLibrary",
+            "line": 15
+          },
+          {
+            "name": "ObFramework.Integrated.GAS.Config.GASConfigLibrary.BehaviorBuilder",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GASPlugin.cs",
+        "module": "Integrated/GAS",
+        "sha256": "38a77ef9cb29f2d8d9149ee05e0086ba59d717959af3b5d069c54fe8046adcce",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GASPlugin",
+            "line": 17
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayAbility/AAbilityBehaviour.cs",
+        "module": "Integrated/GAS/GameplayAbility",
+        "sha256": "8f63d0c0c6b44b430f2806e3ab1242e9b6590ae322772e6b44daad86d29f536e",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayAbility.AAbilityBehaviour",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayAbility/AbilityManager.cs",
+        "module": "Integrated/GAS/GameplayAbility",
+        "sha256": "71102ad92977d0db6032b3ab794ba9bec66bf64c082ff22c7cba84a5620dce23",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayAbility.AbilityManager",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayAbility/ActiveAbility.cs",
+        "module": "Integrated/GAS/GameplayAbility",
+        "sha256": "29c62329303575248300c01dd51d8be61d9a70a42ab5a2a9f7af3bb0de8d15b1",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayAbility.ActiveAbility",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayAbility/ApplyEffectBehavior.cs",
+        "module": "Integrated/GAS/GameplayAbility",
+        "sha256": "106d0c93af77094f5c9e03a2d25ab34666e183b1ee35f8b4ed2753c2559a1b9a",
+        "types": []
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayAbility/GameplayAbility.cs",
+        "module": "Integrated/GAS/GameplayAbility",
+        "sha256": "59efbb0121a687daccf22f8b56fc76756c1f4b9bc5e65ea88b90d6f1f3e5a85a",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayAbility.GameplayAbility",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayCue/CueDispatcher.cs",
+        "module": "Integrated/GAS/GameplayCue",
+        "sha256": "1415ec3f6091562537dc34c0db6407136e55bd4c3be26b9994a4b57ff9092754",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayCue.CueDispatcher",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayCue/CueEvent.cs",
+        "module": "Integrated/GAS/GameplayCue",
+        "sha256": "f79faeee89bc8fe0bb35d21641ad0e8e2137a628e6af8ce456d98e6054c6537c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayCue.CueEvent",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayCue/ECueEventType.cs",
+        "module": "Integrated/GAS/GameplayCue",
+        "sha256": "58cd11d03e2212955975a510201f70934f5f80758c8373c7b791ee1e075a420c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayCue.ECueEventType",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/ActiveEffect.cs",
+        "module": "Integrated/GAS/GameplayEffect",
+        "sha256": "ccd72becfe3b7133c424f29308148c6e85b02038460a044bb35fb6a71dd594d0",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.ActiveEffect",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/AEffectComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "8f1a7594a140653098edcdc7877c617c6c04144baa80807263bd28723ad4c94b",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.AEffectComponent",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/BaseComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "189e7ca079f1adb935a2cc46b8a43fde8135881705855ebbe1fccbfcd29e29c9",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.BaseComponent",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/CancelAbilityComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "d5b004c01e43db7df3c33350c99cde75673ac120a962e65fa4d4b6b9e7a09a96",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.CancelAbilityComponent",
+            "line": 8
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/CostComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "770d685bba0c75b4ccd0938ff54fb0d832b525f0113db6f5aa15bc63a523bc01",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.CostComponent",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/CueComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "dae4259cab21a9a6601eb91f63d44d77d97449e66daaf45713e24b3f712211ef",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.CueComponent",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/ECueTrigger.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "58b3d813083af60659c23639122faa42f16241fc249d8cd01d85948f7d347d1a",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.ECueTrigger",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/ImmunityComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "ef8d2b7f93f5d6918432f0e55b6ea2042c74fa1288cb216450094e05a889704d",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.ImmunityComponent",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/SlotComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "1e3ae1221c8ce1af43037fc7e2128f0afbb0d6539a9b50cd1ed52937b92505e0",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.SlotComponent",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/TagComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "ee007d80d4e71cfe331150a8603962457518e9889b1af4b6b2f78e39f332c9ba",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.TagComponent",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/Components/TagRequirementComponent.cs",
+        "module": "Integrated/GAS/GameplayEffect/Components",
+        "sha256": "9d760c4274c605438f817a1850ae5c1fea94d4be153c6c18681c2b64d4c84d3c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.Components.TagRequirementComponent",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/EEffectDurationType.cs",
+        "module": "Integrated/GAS/GameplayEffect",
+        "sha256": "207de6cd884051d4efd6424330afb8a435ce6874d867665c19b66d1f49865bd7",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.EEffectDurationType",
+            "line": 3
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/EffectContext.cs",
+        "module": "Integrated/GAS/GameplayEffect",
+        "sha256": "ab806612a4c5d117e6e630df3ef38cca9ebfbbb874bca936db087c0ac5c1d233",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.EffectContext",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/EffectManager.cs",
+        "module": "Integrated/GAS/GameplayEffect",
+        "sha256": "7b04ef1c9b3b6824edf98d6903479cafc5492c2159b385cd7b9ac1249be825f9",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.EffectManager",
+            "line": 6
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayEffect/GameplayEffect.cs",
+        "module": "Integrated/GAS/GameplayEffect",
+        "sha256": "6f16dcc4f747fc003c68ca9d50400660dcae60667cdc2bdd68f9bc7de6d48e2c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayEffect.GameplayEffect",
+            "line": 10
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayTag/GameplayTag.cs",
+        "module": "Integrated/GAS/GameplayTag",
+        "sha256": "6f2d50ce542f0dcb2f71d1f48403b327692dbb3f0dd2731bd1196f6d63d7b379",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayTag.GameplayTag",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/GAS/GameplayTag/TagContainer.cs",
+        "module": "Integrated/GAS/GameplayTag",
+        "sha256": "dc437d3d89180cc37318118ee0bd5071097e836f04585725e59355278f1ba91c",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.GAS.GameplayTag.TagContainer",
+            "line": 6
           }
         ]
       },
@@ -939,11 +1421,11 @@
       {
         "source": "Framework/Integrated/UI/IUIAdapter.cs",
         "module": "Integrated/UI",
-        "sha256": "b7d1e3703a9c1cee83baee82768481379b7b9de43b4a47fcf84e621ed13852ea",
+        "sha256": "8a633b9c17ac7f6be7d6bb92e416e5938ffa9e9c315223c77e57bdbd73642856",
         "types": [
           {
             "name": "ObFramework.Integrated.UI.IUIAdapter",
-            "line": 13
+            "line": 12
           }
         ]
       },
@@ -1051,6 +1533,28 @@
           {
             "name": "ObFramework.Integrated.UI.UIViewRegistry",
             "line": 39
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/ViewBinding/BindViewAttribute.cs",
+        "module": "Integrated/ViewBinding",
+        "sha256": "715c09b13ac61ac53ed6404782edb5a137dacd05345748d2c4850de580041edd",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.ViewBinding.BindViewAttribute",
+            "line": 5
+          }
+        ]
+      },
+      {
+        "source": "Framework/Integrated/ViewBinding/GeneratedViewBinding.cs",
+        "module": "Integrated/ViewBinding",
+        "sha256": "7bbda26df58455f7157df042a207e5874184533791a52655e539bbf7d1ea36a8",
+        "types": [
+          {
+            "name": "ObFramework.Integrated.ViewBinding.IGeneratedViewBinding\u003Cout TView\u003E",
+            "line": 7
           }
         ]
       },
@@ -1618,7 +2122,7 @@
       {
         "source": "ObFramework.Adapter.Unity/Core/AGameLauncher.cs",
         "module": "Core",
-        "sha256": "deb90c193f6e01e1cc83ff700469c383208fce58d8b74b97331835ece18db2ad",
+        "sha256": "b7d7bab87430c6cd83f036c2501aaf6b8abc9e19ddf86073df16c72f01297cb6",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.Core.AGameLauncher",
@@ -1634,6 +2138,17 @@
           {
             "name": "ObFramework.Adapter.Unity.Core.UnityFrameLoopBridge",
             "line": 17
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Adapter.Unity/Core/UnityInitSupport.cs",
+        "module": "Core",
+        "sha256": "4a93200d93446f65e9df4b9d20a410f682bb3f2c4406a8dcda9e85f47fc17d4b",
+        "types": [
+          {
+            "name": "System.Runtime.CompilerServices.IsExternalInit",
+            "line": 4
           }
         ]
       },
@@ -1748,11 +2263,11 @@
       {
         "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs",
         "module": "EditorDeploy/Core",
-        "sha256": "d83a46bd4cc352133cb1f40dbbee564e495f03473fea60335a99f871a46e2738",
+        "sha256": "bf82b92d789ee31ad51fd052f67bcbc08c18d5b06bdfcbbd662a152fc2b2ac86",
         "types": [
           {
             "name": "ObFramework.Editor.Core.EditorGenerationRequest",
-            "line": 13
+            "line": 12
           }
         ]
       },
@@ -1893,7 +2408,7 @@
       {
         "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/ViewTemplateGenerator.cs",
         "module": "EditorDeploy/Core",
-        "sha256": "74985c6d286fec48f1a4865edba9e717f392ad581e5ddaca432b2d46969043a8",
+        "sha256": "40a85f191fe689c638ca1e8c80e67d5cbfc401a3d2cdcce2af352a3010841440",
         "types": []
       },
       {
@@ -1952,11 +2467,11 @@
       {
         "source": "ObFramework.Adapter.Unity/Extension/CoreExtension.cs",
         "module": "Extension",
-        "sha256": "40db78e09587457f02191d475396f7aec340981368ada9c780f663a73fe421bd",
+        "sha256": "3865bfdcfe54773a1e56b4406c4f945bdf69b935d2b27ea4569f5d1b99fb7020",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.Extension.CoreExtension",
-            "line": 7
+            "line": 6
           }
         ]
       },
@@ -1974,11 +2489,11 @@
       {
         "source": "ObFramework.Adapter.Unity/Integrations/Addressables/AddressablesAssetAdapter.cs",
         "module": "Integrations/Addressables",
-        "sha256": "3e8183e17055e6264e9bc9b416637738a262eb9e8d2228f68b2cfae474d928f7",
+        "sha256": "125a75e9c7293288f219a8f06dcced100268ce390415519fef649029bb45035d",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.Resource.AddressablesAssetAdapter",
-            "line": 11
+            "line": 12
           }
         ]
       },
@@ -2027,17 +2542,6 @@
         ]
       },
       {
-        "source": "ObFramework.Adapter.Unity/ViewBinding/BindViewAttribute.cs",
-        "module": "ViewBinding",
-        "sha256": "5b9b9c178959bcb3a7ff88d56d66feb5b37306057a112187ef20989c047acc45",
-        "types": [
-          {
-            "name": "ObFramework.Adapter.Unity.ViewBinding.BindViewAttribute",
-            "line": 5
-          }
-        ]
-      },
-      {
         "source": "ObFramework.Adapter.Unity/ViewBinding/GeneratedUIBindingRuntime.cs",
         "module": "ViewBinding",
         "sha256": "946a998599980e891f5b9f3566f20dd3f397c4709b3ee7b1d5b2f87882b0147b",
@@ -2051,22 +2555,18 @@
       {
         "source": "ObFramework.Adapter.Unity/ViewBinding/GeneratedViewBinding.cs",
         "module": "ViewBinding",
-        "sha256": "7583dda804b41cb19d9ea005adfc59517b8fb75fbe6d804a009cfd3ec0ef6305",
+        "sha256": "2c0f9550dabc767a5f8c37e4ffec16882bd7df1dd293f76e32132480b13a08a3",
         "types": [
           {
-            "name": "ObFramework.Adapter.Unity.ViewBinding.IGeneratedViewBinding",
-            "line": 8
-          },
-          {
             "name": "ObFramework.Adapter.Unity.ViewBinding.GeneratedViewBinding",
-            "line": 15
+            "line": 6
           }
         ]
       },
       {
         "source": "ObFramework.Adapter.Unity/ViewBinding/IGeneratedUIBinding.cs",
         "module": "ViewBinding",
-        "sha256": "5aea1fe7ac17f9099d2cff6ab9b2939b1d13fe3ef94cdb6cdf8c9732ebe959ef",
+        "sha256": "bc6dcda1d25f69f98df4addc3f7bc50c338977af19cfc282be3ec520a031d1ea",
         "types": [
           {
             "name": "ObFramework.Adapter.Unity.ViewBinding.IGeneratedUIBinding",
@@ -2121,13 +2621,13 @@
       {
         "source": "ObFramework.Adapter.Unity/ViewBinding/UnityViewBindings.cs",
         "module": "ViewBinding",
-        "sha256": "dcb0bb3fcdd6de64ea4596ad41f179ac210a3f5aef94a3f88988e3c620cf725d",
+        "sha256": "92e2ba2579efafc9c14ce6461b24772bc722cd2a251b1a64fa6b02506826455f",
         "types": []
       },
       {
         "source": "ObFramework.Adapter.Unity/ViewBinding/ViewBinding.cs",
         "module": "ViewBinding",
-        "sha256": "5b65694a8ff05ad5ac04cdbe552d14001a23be4fbd7da4469ee0503bf83f8ecd",
+        "sha256": "904c2ee35486b3936d3cc77ab588aebc73a7d0c7cdaeb588ed3948dc03ba815f",
         "types": []
       }
     ]
@@ -2161,11 +2661,11 @@
       {
         "source": "ObFramework.Adapter.Godot/Core/GodotFrameLoopBridge.cs",
         "module": "Core",
-        "sha256": "28f6e94cedc816eb4af65717efc3cbc64b323668466c749415620ceb6338c8dc",
+        "sha256": "972ab19d8e686ab47f499c00d84ffec3e08ebeabaed379473335289b0b40a7aa",
         "types": [
           {
             "name": "ObFramework.Adapter.Godot.Core.GodotFrameLoopBridge",
-            "line": 7
+            "line": 8
           }
         ]
       },
@@ -2183,11 +2683,11 @@
       {
         "source": "ObFramework.Adapter.Godot/Core/GodotRuntimeHost.cs",
         "module": "Core",
-        "sha256": "5c43b4230bb498c8297b466f4025e6b9bcf42cfb2cfe496021081f11da0885f6",
+        "sha256": "30f20337fdc716075e89f463673e317efeffb66b12e189ec7e770d7ee5a37863",
         "types": [
           {
             "name": "ObFramework.Adapter.Godot.Core.GodotRuntimeHost",
-            "line": 10
+            "line": 11
           }
         ]
       },
@@ -2214,6 +2714,12 @@
         ]
       },
       {
+        "source": "ObFramework.Adapter.Godot/EditorDeploy/ObfGodotEditor.cs",
+        "module": "EditorDeploy",
+        "sha256": "af51d0fab08d8927727ebe955b3d3fb7fd1b8912ec98a7cd4b3e65539137b8a0",
+        "types": []
+      },
+      {
         "source": "ObFramework.Adapter.Godot/Resource/GodotAssetAdapter.cs",
         "module": "Resource",
         "sha256": "483f86f3cd3f7f3412850e1e2d317eaddff944088476fcefdd4db11923f646c3",
@@ -2227,22 +2733,22 @@
       {
         "source": "ObFramework.Adapter.Godot/UI/AUIWindow.cs",
         "module": "UI",
-        "sha256": "3ec615ee8914ef74a9b6ad20de906805c071ea286fab6276fb501343a222cc7e",
+        "sha256": "7bb2e5d790891d606ad660f547b438847b324340d155002aca546ade76ae4bf4",
         "types": [
           {
             "name": "ObFramework.Adapter.Godot.UI.AUIWindow",
-            "line": 14
+            "line": 7
           }
         ]
       },
       {
         "source": "ObFramework.Adapter.Godot/UI/GodotUIAdapter.cs",
         "module": "UI",
-        "sha256": "8b4d1594fa524d5aa58f8c3b6a3b2ad4175268884dff7d1bec6c197e87e9d4b4",
+        "sha256": "c1e0c3d20ef33f5c0b9b19dafe3fa013d21a800393a72da2912961322ca5360f",
         "types": [
           {
             "name": "ObFramework.Adapter.Godot.UI.GodotUIAdapter",
-            "line": 39
+            "line": 13
           }
         ]
       },
@@ -2256,6 +2762,18 @@
             "line": 6
           }
         ]
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/ViewBinding/GodotViewBindings.cs",
+        "module": "ViewBinding",
+        "sha256": "f8b975b598ce469dc3c3a35925ddc305676daee39130431ce8bc57d10a7bfdc2",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Adapter.Godot/ViewBinding/ViewBinding.cs",
+        "module": "ViewBinding",
+        "sha256": "4f420a549978e16ad3b23fb62422fb27961ecc0042c35da52e440737394b70c4",
+        "types": []
       }
     ]
   },
@@ -2364,7 +2882,7 @@
       {
         "source": "ObFramework.Cli/Commands/ClearCommand.cs",
         "module": "Commands",
-        "sha256": "c702a530b989263715b807917b08d11d0192f784744749908a174544927bc161",
+        "sha256": "fcd466dc506463026722c2421559285a5bdee91bf8c96ad353793499ebf2927c",
         "types": []
       },
       {
@@ -2407,6 +2925,17 @@
           {
             "name": "ObFramework.Cli.Commands.Config.ModuleConfigRegistry",
             "line": 11
+          }
+        ]
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Config/Modules/GodotSetupConfig.cs",
+        "module": "Commands/Config/Modules",
+        "sha256": "70d82b7a020603c5f32e7a8f3e31358281547ddfd5da1ab136f3324d9fb95326",
+        "types": [
+          {
+            "name": "ObFramework.Cli.Commands.Config.Modules.GodotSetupConfig",
+            "line": 3
           }
         ]
       },
@@ -2561,6 +3090,12 @@
         "source": "ObFramework.Cli/Commands/Init/GasStarter.cs",
         "module": "Commands/Init",
         "sha256": "3261724d325491d13f1bd3324d2c8fe597769d276c9646988f8bf30fefdb79ce",
+        "types": []
+      },
+      {
+        "source": "ObFramework.Cli/Commands/Init/GodotEditorInitStep.cs",
+        "module": "Commands/Init",
+        "sha256": "ca59d51785dab40dc039b3fdd1141280679045a6f783063cec2028815e6d8fc3",
         "types": []
       },
       {
@@ -2728,30 +3263,30 @@
       {
         "source": "ObFramework.Cli/Deployment/DeployableFileSource.cs",
         "module": "Deployment",
-        "sha256": "00790ca67b48f5cb3a20863b51d530ab3f5b598ad957aba139d4e73cba3d5d8a",
+        "sha256": "f6cf63b8b672f6660b5152303bcce72760412dc965d76476ce4cfdae4ffcdee0",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.IDeployableFileSource",
-            "line": 13
+            "line": 9
           },
           {
             "name": "ObFramework.Cli.Deployment.EmbeddedDeployableFileSource",
-            "line": 36
+            "line": 32
           },
           {
             "name": "ObFramework.Cli.Deployment.DirectoryDeployableFileSource",
-            "line": 114
+            "line": 109
           }
         ]
       },
       {
         "source": "ObFramework.Cli/Deployment/DeploymentException.cs",
         "module": "Deployment",
-        "sha256": "beaa8ba9a3c6b9bde1ff462302de528781a03fe6299e82e2bff81543cfc4e3a0",
+        "sha256": "6c72685fb6f3355ad7d4cb7f3fd14c94916b9bfe238e707db0e53bc040660b3a",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.DeploymentException",
-            "line": 9
+            "line": 7
           }
         ]
       },
@@ -2773,66 +3308,66 @@
       {
         "source": "ObFramework.Cli/Deployment/DeploymentPaths.cs",
         "module": "Deployment",
-        "sha256": "cc6e33b3c1fe315d126b9b2669586b05a835ef92d54a42cf4bc53e81e464c63d",
+        "sha256": "10f0943355295c1701490356438205dd42dcaf057acdccd55dc7705d7f47775a",
         "types": []
       },
       {
         "source": "ObFramework.Cli/Deployment/DeploymentResult.cs",
         "module": "Deployment",
-        "sha256": "f934e4136f367569a45be7effbfa1b05aa8149ddeb04502f49a14baf3486b6ab",
+        "sha256": "18ea50d72ade7f08ec86fbc52997f2b7dd6e8e1cf489382614549513199d912f",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.DeploymentChangeKind",
-            "line": 8
+            "line": 4
           },
           {
             "name": "ObFramework.Cli.Deployment.DeploymentFileChange",
-            "line": 30
+            "line": 26
           },
           {
             "name": "ObFramework.Cli.Deployment.DeploymentOptions",
-            "line": 50
+            "line": 46
           },
           {
             "name": "ObFramework.Cli.Deployment.DeploymentResult",
-            "line": 57
+            "line": 53
           }
         ]
       },
       {
         "source": "ObFramework.Cli/Deployment/OwnedDeploymentManifest.cs",
         "module": "Deployment",
-        "sha256": "2aed3339631e224be1439c9b774c98f2b2a4efe99ce6760e7b761151b56b6ea7",
+        "sha256": "b9291f2b9f53f2c42e5c3ed2610b7e68c9e1596b9bb5fbfa8c75de9400af4a5a",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.OwnedDeploymentManifest",
-            "line": 22
+            "line": 18
           },
           {
             "name": "ObFramework.Cli.Deployment.OwnedDeploymentFile",
-            "line": 128
+            "line": 124
           }
         ]
       },
       {
         "source": "ObFramework.Cli/Deployment/UnityDeployCliModule.cs",
         "module": "Deployment",
-        "sha256": "c472cfe3144f50d424a9b22f8d7a85bed87daef32b220589577d155ce24967c8",
+        "sha256": "f06a25673e01b7903b8d3f5497b35ffe58b43e2a41b5d4a935d639e249b863f1",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.UnityDeployCliModule",
-            "line": 12
+            "line": 11
           }
         ]
       },
       {
         "source": "ObFramework.Cli/Deployment/UnityEditorDeployer.cs",
         "module": "Deployment",
-        "sha256": "9b62fb2f5fcae643be4ac8b2ffd0aacd0a298f3ebce3cfac7627bbea31ef5d0c",
+        "sha256": "dd1f134e8dee3497e59e9b8b4e80230f7075886e6f756f0ec0427e491baa0ced",
         "types": [
           {
             "name": "ObFramework.Cli.Deployment.UnityEditorDeployer",
-            "line": 28
+            "line": 23
           }
         ]
       },
@@ -2998,11 +3533,11 @@
       {
         "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/EditorGenerationRequest.cs",
         "module": "",
-        "sha256": "d83a46bd4cc352133cb1f40dbbee564e495f03473fea60335a99f871a46e2738",
+        "sha256": "bf82b92d789ee31ad51fd052f67bcbc08c18d5b06bdfcbbd662a152fc2b2ac86",
         "types": [
           {
             "name": "ObFramework.Editor.Core.EditorGenerationRequest",
-            "line": 13
+            "line": 12
           }
         ]
       },
@@ -3143,7 +3678,7 @@
       {
         "source": "ObFramework.Adapter.Unity/EditorDeploy/Core/ViewTemplateGenerator.cs",
         "module": "",
-        "sha256": "74985c6d286fec48f1a4865edba9e717f392ad581e5ddaca432b2d46969043a8",
+        "sha256": "40a85f191fe689c638ca1e8c80e67d5cbfc401a3d2cdcce2af352a3010841440",
         "types": []
       },
       {
