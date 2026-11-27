@@ -4,11 +4,11 @@
 
 ## Commands/Config/Modules/LubanSetupConfig.cs
 
-[Source](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs)
+`ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs` (source checkout)
 
 ### ObFramework.Cli.Commands.Config.Modules.LubanSetupConfig
 
-Declared at [line 3](https://github.com/OBSERVATER/ObFramework/blob/5471678c694280782ef353e887accd18a03296e8/ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs#L3).
+Declared at `ObFramework.Cli/Commands/Config/Modules/LubanSetupConfig.cs:3` (source checkout).
 
 ```csharp
 public sealed class LubanSetupConfig
@@ -17,6 +17,7 @@ public sealed class LubanSetupConfig
     [SetupPath] public string ConfPath { get; set; };
     [SetupPath] public string CodeOutputRoot { get; set; };
     [SetupPath] public string DataOutputRoot { get; set; };
+    [SetupPath(AllowEmpty = true)] public string GasConfPath { get; set; };
     public string Target { get; set; };
 ```
 

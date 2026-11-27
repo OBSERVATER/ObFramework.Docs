@@ -6,8 +6,8 @@
 
 ```text
 ob init [--root <DIR>] [--engine <ENGINE>]
-        [--package-version <VERSION>] [--source <FEED>]
-        [--skip-packages] [--skip-download]
+        [--resources <BACKEND>] [--package-version <VERSION>] [--source <FEED>]
+        [--skip-packages] [--skip-download] [--gas] [--non-interactive]
 ```
 
 | Option | Behavior |
@@ -18,6 +18,19 @@ ob init [--root <DIR>] [--engine <ENGINE>]
 | `--source` | Additional NuGet feed. Relative filesystem paths are resolved against the working directory. |
 | `--skip-packages` | Skips framework NuGet restoration. With Addressables selected, UPM configuration and integration source deployment still run. |
 | `--skip-download` | Skips Luban installation; other steps still run. A network failure during the Luban download also lets initialization continue and records the skip. |
+| `--gas` | Creates the Luban GAS starter workbooks and schema. Existing workbooks are preserved. |
+| `--resources` | Unity resource backend, either `addressables` or `custom`. |
+| `--non-interactive` | Requires `--root`. Omitting `--engine` selects `auto` for that root. Uses defaults for other omitted options. |
+
+On a terminal, init asks for the project root, engine, applicable Unity resource and package settings, Luban installation (default yes), GAS starter (default no), and optional Luban schema and output paths. Explicit options resolve their respective choices. Redirected stdin uses defaults. To initialize an automated project with the starter:
+
+```powershell
+ob init --root "D:/Games/MyGame" --gas --non-interactive
+ob table validate
+ob table generate
+```
+
+The starter lives beside the configured Luban schema under `GAS/`. A new project uses the starter schema as its primary schema. An existing primary schema continues to run alongside it. See [GAS workbooks and generated files](Table.md#gas-excel-starter).
 
 Auto detection looks first for Unity `Assets/` plus `ProjectSettings/`, then `project.godot`, then a `*.uproject`. An unrecognized directory uses the engine-neutral setup/Luban path. Selecting an engine explicitly validates its project marker. Godot/Unreal initialization currently does not install engine adapter packages or deploy their Editor integrations.
 
@@ -60,7 +73,7 @@ to the core project.
 
 ## Optional Addressables integration
 
-Unity projects default to the `custom` resource backend. To opt into [Addressables](../../ObFramework.Adapter.Unity/Integrations/Addressables.md), set `modules.installation.resources` in `setup.json` to `addressables` and run `ob init` from the Unity project root.
+New Unity projects default to [Addressables](../../ObFramework.Adapter.Unity/Integrations/Addressables.md). Existing projects default to their saved resource backend. Use `--resources custom` for a game-provided adapter.
 
 The Addressables integration deploys source and an asmdef to `Assets/ObFramework/Integrations/Addressables/`, compiled by the game against its own UPM package. An existing registry version in the supported `1.21.x` range is preserved; an absent selection receives `1.21.21`. An incompatible, Git, or local-path selection fails validation.
 
